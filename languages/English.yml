@@ -1,0 +1,261 @@
+#Placeholders
+# <prefix> = The command prefix the user used
+# <mention> = Mention tag of the user
+# <nl> = New line
+# <plural:text> = Means the text will be shown only if the value is plural. Example: Apple<plural:s>
+# <plural:text1||text2> = Means the text1 will be shown only if the value is plural. If not, text2 will be shown.
+
+#You can remove comment lines while translating if you want.
+
+ms: ms #Example: 100ms
+
+#Guide Command
+guide:
+  guideSent: My guide has been directly messaged to you, <mention>!
+  #You can't create new embeds or fields etc. It won't affect.
+  embeds:
+    '1':
+      title: Command Prefixes
+    '2':
+      title: Documentation Command
+      fields:
+        '1':
+          title: Arguments
+          value: |
+            ```css
+            <Search Query> (!|-)contains:<Texts> (!|-)sources:<Addons/Skript> (!|-)sections:<Sections> page:<Number> id:<Number>```**-** Putting **!** or **-** before a flag makes the flag negative.
+            **-** Contains flag must come after search query.
+            **-** All flags are optional and the order doesn't matter expect contains flag.
+            **-** There are aliases for all flags. **Examples:** containsText, includesText, addons, from, types, categories, pages, codeID, element etc...
+        '2':
+          title: Examples
+          value: |
+            **!sk docs** file 
+             *`- Search for everything that contains "file".`*
+             
+            **!sk docs** bossbar **source:**skRayFall **section:**Effects,Expressions
+             *`- Contains "bossbar", from skRayFall addon, only effects and expressions.`*
+             
+            **!sk docs** tree **contains:**type **sec:**types **from:**Skript
+             *`- Contains "tree" and "type", from Skript and only types.`*
+            
+            **!sk docs** subtext **id:**1
+             *`- Code with ID 1 from results that contains "subtext".`*
+            
+            **!sk docs** * **!contains:**message -- embed **of:**Vixio **category:**effs
+             *`- List every effects that doesn't contain "message" and "embed" from Vixio addon.`*
+            
+            **!sk docs** inventory **!cont:**open -- blank **addon:**skQuery,TuSKe
+             *`- Contains "inventory", doesn't contain "open" and "blank", from skQuery and TuSKe addons, only expressions.`*
+    '3':
+      title: Other Commands
+      value: |
+        :low_brightness: **!sk info** - **!sk stats** *- Get some information about the bot.*
+        
+        :low_brightness: **!sk name** - **!sk nameList** - **!sk skriptNames** *- Get usable names of something in Skript. Like enchantments, trees, potion effects, entities. Type the command for usage.*
+        
+        :low_brightness: **!sk downloads** - **!sk addons** - **!sk down** `[search query]` *- Get download links of Skript, Addons, Aliases, Spigot and PaperSpigot.*
+         **Search Queries:** skript, addons, aliases, spigot, paperspigot, paper etc.
+         **Examples:** `!sk downloads` - `!sk down skript` - `!sk down skript and aliases` - `!sk down skript aliases paper`
+        
+        :low_brightness: **!sk invite** - **!sk link** - **!sk inviteLink** - **!sk join** *- Get an invite link to add the bot to your server.*
+    
+#Documentation Command
+docs:
+  skriptDocumentationTitle: Skript Documentation
+  skriptDocumentationSearchTitle: Skript Documentation Search
+  info: Info
+  events: Events
+  conditions: Conditions
+  effects: Effects
+  expressions: Expressions
+  functions: Functions
+  types: Types
+  page: Page #like Page: 2
+  codeID: Code ID
+  search:
+    found1Result: Found only 1 result, showing its info directly.
+    nothingFound: Nothing related to this query and flags was found.
+    query-everything:
+    - '*'
+    - '*everything*'
+    - '\\*everything*'
+    - '*everything\\*'
+    - '\\*everything\\*'
+    everythingTitle: '**\***Everything**\***'
+    query: Query
+    queryContains: Contains
+    queryDoesNotContain: Doesn't Contain
+    sources: Source<plural:s>
+    notSources: (Not) Source<plural:s> #like (Not) Source: Skript
+    sections: Section<plural:s>
+    notSections: (Not) Section<plural:s> #like (Not) Sections: Effects and Expressions
+    flags:
+      addons:
+        pattern: a(?:d(?:d(?:(?:-)?ons?)?)?)?|sources?|from|of #There must be non-capturing groups (?:)! -- Don't use spaces
+      sections:
+        pattern: s(?:e(?:c(?:tion)?)?)?s?|types?|categor(?:y|ies) #There must be non-capturing groups (?:)! -- Don't use spaces
+        values:
+          #Don't use spaces
+          events: ev(en)?(t)?s?
+          conditions: co(n)?(d)?(it(io)?(n)?)?s?
+          effects: eff?(ect?)?s?
+          expressions: ex(p)?(r)?(ess?io(n)?)?s?
+          functions: fu(n)?(c)?(t(io(n)?)?)?s?
+          types: ty(p)?(e)?s?|class?(es)?
+      page:
+        pattern: p|pa?ge?s? #There must be non-capturing groups (?:)! -- Don't use spaces
+      id:
+        pattern: 'c(?:ode?)?|(?:code?)?ID?s?|element?s?' #There must be non-capturing groups (?:)! -- Don't use spaces
+      contains:
+        pattern: (c(o(n(tain(s(text)?)?)?)?)?|include(s(text)?)?) 
+  infoPage:
+    description: Description
+    patterns: Patterns
+    usage: Usage
+    examples: Examples
+    eventValues: Event Values
+    cancellable: Cancellable
+    notCancellable: Not Cancellable
+    changers: Changers
+    returnType: Return Type
+    since: Since
+    unknownSince: unknown
+    requiredAddon: Required Skript Addon
+    type:
+      title: Type
+      values:
+        event: Event
+        condition: Condition
+        effect: Effects
+        expression: Expression
+        function: Function
+        type: Type
+  errors:
+    invalidAddonNames-Title: Invalid Addon Name<plural:s>
+    invalidAddonName: this addon name is invalid
+    invalidAddonNames: these addon names are invalid
+    
+    invalidSectionNames-Title: Invalid Section<plural:s>
+    invalidSectionName: this section name is invalid
+    invalidSectionNames: these section names are invalid
+    
+    invalidPage: Invalid Page
+    pageMustBeInteger: <mention>, the page flag must be an integer.
+    
+    incompatibleFlags: Incompatible Flags
+    pageWithoutSection: <mention>, you can't set a page without specifying a section. Please specify a section using ``section:<Sections>`` flag.<nl><nl>**Sections:** ``events``/``conditions``/``effects``/``expressions``/``functions``/``types`` - and their abbreviations.
+    pageWithMultipleSections: <mention>, you can't set a page when using multiple sections.
+    
+    invalidCodeID: Invalid Code ID
+    idMustBeInteger: <mention>, the ID flag must be an integer.
+    
+    tooLongQuery: Too Long Query
+    queryLengthCantBeGreaterThan200: <mention>, the search query length can't be greater than 200.
+
+  availableSections: '**Available Sections:** `events`/`conditions`/`effects`/`expressions`/`functions`/`types` - and their abbreviations.'
+  avaiableAddons: Available Addons
+  wrongUsageTitle: Wrong Usage
+  wrongUsage: <mention>, please type **<prefix>help** for help!
+
+#Names Command
+names:
+  commandUsage:
+    title: Command Usage
+    commandsTitle: Commands
+    argumentsTitle: Arguments
+    sections: Sections
+    section: Section
+    page: page
+  enchantments:
+    arguments: ench(anment)?s?(( )?types?)?
+    title: Usable Enchantments List for Skript 
+  potionEffects:
+    arguments: pot(ion)?(( )?eff(ect)?s?)?(( )?types?)?|eff(ect)?s?
+    title: Usable Potion Effects List for Skript
+  biomes:
+    arguments: biomes?
+    title: Usable Potion Effects List for Skript
+  treeTypes:
+    arguments: trees?(( )?types?)?
+    title: Usable Tree Types List for Skript
+  colors:
+    arguments: colo(u)?rs?|dyes?
+    title: Usable Colors List for Skript
+  chatStyles:
+    arguments: chat( )?styles?
+    title: Usable Chat Styles List for Skript
+  damageCauses:
+    arguments: d(am((a)?ge)?)?( )?c(auses?)?
+    title: Usable Damage Causes List for Skript
+  visualEffects: 
+    arguments: v(isual)?( )?e(ff(ect)?s)?|particles?
+    title: Usable Visual Effects List for Skript
+  inventoryActions:
+    arguments: inv(entory)?( )?act(ion)?s
+    title: Usable Inventory Actions List for Skript
+  clickActions:
+    arguments: click( )?act(ion)?s
+    title: Usable Click Actions List for Skript
+  inventoryTypes:
+    arguments: inv(entor(y|ies))?(( )?types?)?
+    title: Usable Inventory Types List for Skript
+  entityTypes:
+    arguments: entit(ies|y)( )?(types?)?
+    title: Usable Entity Types List for Skript
+
+#Bot Info Command
+botInfo:
+  title: Bot Info
+  RAM: RAM
+  megaByte: MB
+  runtime: Runtime
+  servers: Servers
+  users: Users
+  invite: Invite
+  installedAddons: Installed Addons
+  documentCount: Total Number of Documents
+  joinServerDate: Join Server Date
+  created: '**Created:** by ``@Blueyescat##0733`` on August 3, 2017'
+
+#Invites Command
+invites:
+  click: Click here to add me to your server!
+
+#Downloads Command
+downloads:
+  title: Downloads
+  latest: Latest
+  latestBETA: Latest BETA Version
+  skript: Skript
+  addons: Addons
+  aliases: Aliases
+  arguments:
+    skript: sk(ript)? 
+    addons: (sk(ript)?)?add-?ons?
+    aliases: (english)?(sk(ript)?)?alias(es)?(file)?
+    spigot: spigot
+    paperspigot: paper(spigot)?
+
+#Language Command
+language:
+  botLanguageTitle: Bot Language
+  onlyOwner: Only the server owner and `Blueyescat#0733` can use this command.
+  noArgument: |
+    Type **<prefix> language <Language>** to change language of the bot for this server.
+    
+    **Available Languges:**
+    <languages>
+  by: (by <translators>)
+  languageChanged: 'Successfully changed language of the bot for this server to **English**.'
+  specialThanks: Thanks to <translators> for translating skDocs into this language!
+
+commands:
+  #Don't use spaces
+  guide: help|guide|co?m(man)?ds?
+  skriptDocumentation: (?i)(Sk(ript)?)?Doc(ument(ation)?)?s?
+  info: (bot)?(info(rmation)?|Stat(istic)?s)
+  names: (sk(ript)?)?names?(list)?
+  invites: (inv(ite)?s?|join)?(Link|URL)s?)
+  downloads: Down?(load)?s?|skript|aliases|add-?ons?(List)?|(list)?Add-?ons?
+  language: lang(uage)?s?
