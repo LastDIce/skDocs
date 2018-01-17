@@ -42,7 +42,7 @@ guide:
       value: |        
         :low_brightness: **!sk bilgi** - **!sk istatistikler** *- Bot hakkında bazı bilgiler al.*
         
-        :low_brightness: **!sk isim** - **!sk isimListesi** - **!sk skriptİsimleri** *- Skript'te bazı şeylerin isimlerini listeler. Büyüler, ağaçlar, iksir etkileri, varlıklar gibi. Kullanımı için komutu yazın. *
+        :low_brightness: **!sk isim** - **!sk isimListesi** - **!sk skriptİsimleri** *- Skript'te bazı şeylerin isimlerini listeler. Büyüler, ağaçlar, iksir etkileri, varlıklar gibi. Kullanımı için komutu yazın.*
         
         :low_brightness: **!sk indirmeler** - **!sk addonlar** - **!sk indir** `[arama kaynağı]` *- Skript, Addonlar, Aliases, Spigot ve PaperSpigot indirmeleri için adres al.*
          **Arama Kaynakları:** skript, addons, aliases, spigot, paperspigot, paper vb.
