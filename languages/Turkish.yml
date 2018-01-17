@@ -210,6 +210,7 @@ botInfo:
   documentCount: Toplam Belge Sayısı
   joinServerDate: Sunucuya Katılma Zamanı
   created: '**Oluşturuldu:** ``@Blueyescat##0733`` tarafından 3 Ağustos 2017''de'
+  gitHubTitle: Sorun İzleyicisi ve Dil Yönetimi
 
 #Invites Command
 invites:
