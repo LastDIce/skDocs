@@ -257,6 +257,6 @@ commands:
   skriptDocumentation: (?i)(Sk(ript)?)?Doc(ument(ation)?)?s?
   info: (bot)?(info(rmation)?|Stat(istic)?s)
   names: (sk(ript)?)?names?(list)?
-  invites: (inv(ite)?s?|join)?(Link|URL)s?)
+  invites: (inv(ite)?|join)?(Link|URL)?s?
   downloads: Down?(load)?s?|skript|aliases|add-?ons?(List)?|(list)?Add-?ons?
   language: lang(uage)?s?
