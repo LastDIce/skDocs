@@ -1,0 +1,253 @@
+ms: ms
+
+#Guide Command
+guide:
+  guideSent: Kullanım kılavuzum sana direkt mesaj olarak gönderildi, <mention>!
+  embeds:
+    '1':
+      title: Komut Ön Ekleri
+    '2':
+      title: Dokümantasyon Komutu
+      fields:
+        '1':
+          title: Argümanlar
+          value: |
+            ```css
+            <Arama Kaynağı> (!|-)içeriyor:<Yazılar> (!|-)kaynaklar:<Addonlar/Skript> (!|-)bölümler:<Bölümler> page:<Sayı> id:<Sayı>```**-** Bir etiketten önce **!** veya **-** koymak etiketi negatif yapar.
+            **-** İçeriyor etiketi arama kaynağından hemen sonra gelmek zorunda.
+            **-** İçeriyor etiketi dışında bütün etiketler opsiyonel.
+            **-** Bütün etiketler için birçok takma ad var. **Örnekler:** yazıİçeren, yazıİçeriyor, addonlar, şunun, türler, kategoriler, sayfa, kodID'si, öğe vb...
+        '2':
+          title: Örnekler
+          value: |
+            **!sk docs** file 
+             *`- "file" içeren her şeyi ara.`*
+             
+            **!sk docs** bossbar **kaynak:**skRayFall **bölümler:**Etkiler,İfadeler
+             *`- "bossbar" içeren, skRayFall addonundan, sadece etki ve ifadeler.`*
+             
+            **!sk docs** tree **içeriyor:**type **böl:**tipler **kaynaklar:**Skript
+             *`- "tree" ve "type" içeren, Skript'ten ve sadece tipler.`*
+            
+            **!sk docs** subtext **id:**1
+             *`- "subtext" içeren sonuçlardan 1 ID'li kod.`*
+            
+            **!sk docs** * **!içeriyor:**message -- embed **şunun:**Vixio **kategori:**etkiler
+             *`- Vixio addonundan "message" ve "embed" içermeyen etkileri listele.`*
+            
+            **!sk docs** inventory **!içer:**open -- blank **add-on:**skQuery,TuSKe
+             *`- "inventory" içeren, "open" ve "blank" içermeyen, skQuery ve TuSKe addonlarından, sadece ifadeler.`*
+    '3':
+      title: Diğer Komutlar
+      value: |        
+        :low_brightness: **!sk bilgi** - **!sk istatistikler** *- Bot hakkında bazı bilgiler al.*
+        
+        :low_brightness: **!sk isim** - **!sk isimListesi** - **!sk skriptİsimleri** *- Skript'te bazı şeylerin isimlerini listeler. Büyüler, ağaçlar, iksir etkileri, varlıklar gibi. Kullanımı için komutu yazın. *
+        
+        :low_brightness: **!sk indirmeler** - **!sk addonlar** - **!sk indir** `[arama kaynağı]` *- Skript, Addonlar, Aliases, Spigot ve PaperSpigot indirmeleri için adres al.*
+         **Arama Kaynakları:** skript, addons, aliases, spigot, paperspigot, paper vb.
+         **Örnekler:** `!sk indirmeler` - `!sk indir skript` - `!sk indir skript ve aliases` - `!sk indir skript aliases paper`
+        
+        :low_brightness: **!sk davet** - **!sk adres** - **!sk davetAdresi** - **!sk katıl** *- Botu sunucuna eklemek için bir adres al.*
+    
+#Documentation Command
+docs:
+  skriptDocumentationTitle: Skript Dokümantasyonu
+  skriptDocumentationSearchTitle: Skript Dokümantasyonu Araması
+  info: Bilgi
+  events: Olaylar
+  conditions: Koşullar
+  effects: Etkiler
+  expressions: İfadeler
+  functions: Fonksiyonlar
+  types: Tipler
+  page: Sayfa
+  codeID: Kod ID'si
+  search:
+    found1Result: Sadece 1 sonuç bulundu, direkt olarak onun bilgileri gösteriliyor.
+    nothingFound: Bu arama kaynağı ve etiketler ile eşleşen hiçbir şey bulunamadı.
+    query-everything:
+    - '*'
+    - '*her şey*'
+    - '\\*her şey*'
+    - '*her şey\\*'
+    - '\\*her şey\\*'
+    - '*herşey*'
+    - '\\*herşey*'
+    - '*herşey\\*'
+    - '\\*herşey\\*'
+    everythingTitle: '**\***Her Şey**\***'
+    query: Kaynak
+    queryContains: İçeriyor
+    queryDoesNotContain: İçermiyor
+    sources: Kaynak<plural:lar>
+    notSources: (Değil) Kaynak<plural:lar>
+    sections: Bölüm<plural:ler>
+    notSections: (Değil) Bölüm<plural:ler>
+    flags:
+      addons:
+        pattern: add(?:-?on)?(?:lar)?|kaynak(?:lar)?|şunun|bunun|burdan
+      sections:
+        pattern: böl(?:üm(?:ler)?)?|tür(?:ler)?|kategori(?:ler)?
+        values:
+          events: ola?y(lar)?
+          conditions: (koşul|şart)(lar)?
+          effects: (etki|efekt)(ler)?
+          expressions: ifade(ler)?
+          functions: fonk(siyon)?(lar)?
+          types: (tip|tür)(ler)?|sınıf(lar)?
+      page:
+        pattern: sa?y(?:fa)?(?:lar)?
+      id:
+        pattern: 'kod|(?:kod)?(?:I(?:D(?:''?(?:si)?)?)?)?|öğe'
+      contains:
+        pattern: (yazı(lar)?)?İçer(iyor|en)?
+  infoPage:
+    description: Açıklama
+    patterns: Kalıplar
+    usage: Kullanım
+    examples: Örnekler
+    eventValues: Olay Değerleri
+    cancellable: İptal Edilebilir
+    notCancellable: İptal Edilemez
+    changers: Değiştiriciler
+    returnType: Dönüş Tipi
+    since: Sürüm
+    unknownSince: bilinmeyen
+    requiredAddon: Gereken Skript Addonu
+    type:
+      title: Tür
+      values:
+        event: Olay
+        condition: Koşul
+        effect: Etki
+        expression: İfade
+        function: Fonksiyon
+        type: Tip
+  errors:
+    invalidAddonNames-Title: Geçersiz Addon İs<plural:imleri||imi>
+    invalidAddonName: bu addon adı geçersiz
+    invalidAddonNames: bu addon isimleri geçersiz
+    
+    invalidSectionNames-Title: Geçersiz Bölüm<plural:ler>
+    invalidSectionName: bu bölüm adı geçersiz
+    invalidSectionNames: bu bölüm isimleri geçersiz
+    
+    invalidPage: Geçersiz Sayfa
+    pageMustBeInteger: <mention>, sayfa etiketi bir tam sayı olmalı.
+    
+    incompatibleFlags: Uyumsuz Etiketler
+    pageWithoutSection: <mention>, bir bölüm belirlemeden sayfa belirleyemezsin. Lütfen ``bölüm:<Bölümler>`` etiketini kullanarak bir bölüm belirle.<nl><nl>**Bölümler:** ``olaylar``/``koşullar``/``etkiler``/``ifadeler``/``fonksiyonlar``/``türler`` - ve bunların kısaltmaları.
+    pageWithMultipleSections: <mention>, birden fazla bölüm kullanırken sayfa belirleyemezsin.
+    
+    invalidCodeID: Geçersiz Kod ID'si
+    idMustBeInteger: <mention>, ID etiketi bir tam sayı olmalı.
+    
+    tooLongQuery: Çok Uzun Arama Kaynağı
+    queryLengthCantBeGreaterThan200: <mention>, arama kaynağı uzunluğu 200'den fazla olamaz.
+
+  availableSections: '**Mevcut Bölümler:** `olaylar`/`koşullar`/`etkiler`/`ifadeler`/`fonksiyonlar`/`tipler` - ve bunların kısaltmaları.'
+  avaiableAddons: Mevcut Addonlar
+  wrongUsageTitle: Yanlış Kullanım
+  wrongUsage: <mention>, lütfen yardım için **<prefix>yardım** yaz!
+
+#Names Command
+names:
+  commandUsage:
+    title: Komut Kullanımı
+    commandsTitle: Komutlar
+    argumentsTitle: Argümanlar
+    sections: Bölümler
+    section: Bölüm
+    page: sayfa
+  enchantments:
+    arguments: büyü(ler)?(tip(ler)?i)?
+    title: Skript İçin Kullanılabilir Büyü Listesi
+  potionEffects:
+    arguments: iksir( )?etki(leri)?(( )?tip(ler)?i)?|etki(ler)?
+    title: Skript İçin Kullanılabilir İksir Etkileri Listesi
+  biomes:
+    arguments: biyom(lar)?
+    title: Skript İçin Kullanılabilir Biyom Listesi
+  treeTypes:
+    arguments: ağaç(lar)?( )?tür(leri|ü)?
+    title: Skript İçin Kullanılabilir Ağaç Türleri Listesi
+  colors:
+    arguments: renk(ler)?|boya(lar)?
+    title: Skript İçin Kullanılabilir Renk Listesi
+  chatStyles:
+    arguments: sohbet( )?stil(ler)?i
+    title: Skript İçin Kullanılabilir Sohbet Stilleri Listesi
+  damageCauses:
+    arguments: h(asar)?( )?sebe(pler|b)?i
+    title: Skript İçin Kullanılabilir Hasar Sebepleri Listesi
+  visualEffects: 
+    arguments: sanal( )?efekt(ler)?|parçacık(lar)?
+    title: Skript İçin Kullanılabilir Sanal Efektler Listesi
+  inventoryActions:
+    arguments: env(anter)?( )?eylem(ler)?i
+    title: Skript İçin Kullanılabilir Envanter Eylemleri Listesi
+  clickActions:
+    arguments: tık(lama)?( )?eylem(ler)?i
+    title: Skript İçin Kullanılabilir Tıklama Eylemleri Listesi
+  inventoryTypes:
+    arguments: env(anter)?( )?tip(ler)?i
+    title: Skript İçin Kullanılabilir Envanter Tipleri Listesi
+  entityTypes:
+    arguments: varlık(lar)?(( )?tip(ler)?i)?
+    title: Skript İçin Kullanılabilir Varlık Listesi
+
+#Bot Info Command
+botInfo:
+  title: Bot Bilgisi
+  RAM: RAM
+  megaByte: MB
+  runtime: Çalışma Zamanı
+  servers: Sunucular
+  users: Kullanıcılar
+  invite: Davet
+  installedAddons: Yüklü Addonlar
+  documentCount: Toplam Belge Sayısı
+  joinServerDate: Sunucuya Katılma Zamanı
+  created: '**Oluşturuldu:** ``@Blueyescat##0733`` tarafından 3 Ağustos 2017''de'
+
+#Invites Command
+invites:
+  click: Beni sunucuna eklemek için buraya tıkla!
+
+#Downloads Command
+downloads:
+  title: İndirmeler
+  latest: En Son
+  latestBETA: Son BETA Sürümü
+  skript: Skript
+  addons: Addonlar
+  aliases: Aliases
+  arguments:
+    skript: sk(ript)? 
+    addons: (sk(ript)?)?add-?on(ları?)?
+    aliases: (ingilizce)?(sk(ript)?)?alias(es)?(dosya(sı)?)?
+    spigot: spigot
+    paperspigot: paper(spigot)?
+
+#Language Command
+language:
+  onlyOwner: Bu komutu sadece sunucu sahibi ve `Blueyescat#0733` kullanabilir.
+  noArgument: |
+    Bu sunucu için botun dilini değiştirmek için **<prefix> dil <dil>** yaz.
+    
+    **Mevcut Diller:**
+    <languages>
+  by: (<translators> tarafından)
+  languageChanged: 'Başarıyla bu sunucu için botun dili **Türkçe** olarak belirlendi.'
+  specialThanks: skDocs'u bu dile çevirdikleri için <translators>'e teşekkürler.
+
+commands:
+  #Don't use spaces
+  guide: yardım|kılavuz|kullanım|kullanım( )?kılavuzu?|komut(lar)?
+  skriptDocumentation: (?i)(Skript)?Dok(ü(manı?(t(asyonu)?)?)?)?|belge(ler)?i
+  info: (bot)?bilgi(si|leri)?|istatistik(ler)?
+  names: (sk(ript)?)?isim(leri?)?(listesi)?
+  invites: davet(adresi?|URL(''?si))
+  downloads: İndir(me(ler)?)?|add-?on(lar)?(Liste(si)?)?
+  language: dil(ler)?
