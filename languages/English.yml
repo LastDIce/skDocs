@@ -1,4 +1,4 @@
-#Placeholders
+#Placeholders - works on only specified values.
 # <prefix> = The command prefix the user used
 # <mention> = Mention tag of the user
 # <nl> = New line
