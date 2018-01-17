@@ -1,4 +1,6 @@
-# skDocs
+
+  ![](https://i.hizliresim.com/PlpAR6.png)
+
 Up to date, fast, reliable, featured and proper Skript documentation Discord bot.
 
 
