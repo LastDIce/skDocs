@@ -224,6 +224,7 @@ downloads:
   skript: Skript
   addons: Addonlar
   aliases: Aliases
+  addonDownloadTitle: Son Sürüm <addon> İçin İndirme Adresi
   arguments:
     skript: sk(ript)? 
     addons: (sk(ript)?)?add-?on(ları?)?

@@ -231,6 +231,7 @@ downloads:
   skript: Skript
   addons: Addons
   aliases: Aliases
+  addonDownloadTitle: Download Link for the Latest <addon> Version
   arguments:
     skript: sk(ript)? 
     addons: (sk(ript)?)?add-?ons?
