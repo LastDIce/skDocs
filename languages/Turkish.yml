@@ -77,7 +77,7 @@ docs:
     - '*herşey\\*'
     - '\\*herşey\\*'
     everythingTitle: '**\***Her Şey**\***'
-    query: Kaynak
+    query: Arama Kaynağı
     queryContains: İçeriyor
     queryDoesNotContain: İçermiyor
     sources: Kaynak<plural:lar>
@@ -209,7 +209,7 @@ botInfo:
   installedAddons: Yüklü Addonlar
   documentCount: Toplam Belge Sayısı
   joinServerDate: Sunucuya Katılma Zamanı
-  created: '**Oluşturuldu:** ``@Blueyescat##0733`` tarafından 3 Ağustos 2017''de'
+  created: '**Oluşturuldu:** ``@Blueyescat#0733`` tarafından 3 Ağustos 2017''de'
   gitHubTitle: Sorun İzleyicisi ve Dil Yönetimi
 
 #Invites Command
