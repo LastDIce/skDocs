@@ -8,6 +8,7 @@
 #You can remove comment lines while translating if you want.
 
 ms: ms #Example: 100ms
+invalidCodeBlock: Invalid code block!
 
 #Guide Command
 guide:
@@ -57,7 +58,9 @@ guide:
         :low_brightness: **!sk downloads** - **!sk addons** - **!sk down** `[search query]` *- Get download links of Skript, Addons, Aliases, Spigot and PaperSpigot.*
          **Search Queries:** skript, addons, aliases, spigot, paperspigot, paper etc.
          **Examples:** `!sk downloads` - `!sk down skript` - `!sk down skript and aliases` - `!sk down skript aliases paper`
-        
+          
+        :low_brightness: **!sk syntax** - **!sk syntaxExamples** - **!sk randomSyntax** - **!sk match** - **!sk matchSyntax** *- Generate random usage examples from a Skript code syntax.*
+      
         :low_brightness: **!sk invite** - **!sk link** - **!sk inviteLink** - **!sk join** *- Get an invite link to add the bot to your server.*
     
 #Documentation Command
@@ -114,6 +117,7 @@ docs:
     patterns: Patterns
     usage: Usage
     examples: Examples
+    randomExampleCode: ' ^ Random Generated Code'
     eventValues: Event Values
     cancellable: Cancellable
     notCancellable: Not Cancellable
@@ -239,6 +243,11 @@ downloads:
     spigot: spigot
     paperspigot: paper(spigot)?
 
+#Syntax Match Command
+syntaxMatch:
+  tooLongSyntax: Too long syntax!
+  title: Random Syntax Match
+
 #Language Command
 language:
   botLanguageTitle: Bot Language
@@ -255,9 +264,10 @@ language:
 commands:
   #Don't use spaces
   guide: help|guide|co?m(man)?ds?
-  skriptDocumentation: (?i)(Sk(ript)?)?Doc(ument(ation)?)?s?
-  info: (bot)?(info(rmation)?|Stat(istic)?s)
+  skriptDocumentation: (Sk(ript)?)?Doc(ument(ation)?)?s?
+  info: bot|(bot)?(info(rmation)?|Stat(istic)?s)
   names: (sk(ript)?)?names?(list)?
   invites: (inv(ite)?|join)?(Link|URL)?s?
   downloads: Down?(load)?s?|skript|aliases|add-?ons?(List)?|(list)?Add-?ons?
+  syntaxMatch: (random)?syn(tax)?(Match|Examples?)?|match(Syn(tax)?)?
   language: lang(uage)?s?

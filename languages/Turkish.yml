@@ -1,4 +1,5 @@
 ms: ms
+invalidCodeBlock: Geçersiz Kod Bloğu!
 
 #Guide Command
 guide:
@@ -47,6 +48,8 @@ guide:
         :low_brightness: **!sk indirmeler** - **!sk addonlar** - **!sk indir** `[arama kaynağı]` *- Skript, Addonlar, Aliases, Spigot ve PaperSpigot indirmeleri için adres al.*
          **Arama Kaynakları:** skript, addons, aliases, spigot, paperspigot, paper vb.
          **Örnekler:** `!sk indirmeler` - `!sk indir skript` - `!sk indir skript ve aliases` - `!sk indir skript aliases paper`
+        
+        :low_brightness: **!sk kodKalıbı** - **!sk syntaxÖrnekleri** - **!sk rastgeleSyntax** - **!sk match** - **!sk eşleştir** *- Bir Skript kodu kalıbından rastgele örnek kullanımlar oluştur.*
         
         :low_brightness: **!sk davet** - **!sk adres** - **!sk davetAdresi** - **!sk katıl** *- Botu sunucuna eklemek için bir adres al.*
     
@@ -107,6 +110,7 @@ docs:
     patterns: Kalıplar
     usage: Kullanım
     examples: Örnekler
+    randomExampleCode: ' ^ Rastgele Oluşturulan Kod'
     eventValues: Olay Değerleri
     cancellable: İptal Edilebilir
     notCancellable: İptal Edilemez
@@ -231,6 +235,11 @@ downloads:
     aliases: (ingilizce)?(sk(ript)?)?alias(es)?(dosya(sı)?)?
     spigot: spigot
     paperspigot: paper(spigot)?
+ 
+#Syntax Match Command
+syntaxMatch:
+  tooLongSyntax: Çok uzun kod kalıbı!
+  title: Rastgele Kod Kalıbı Eşleştirmesi
 
 #Language Command
 language:
@@ -247,9 +256,10 @@ language:
 commands:
   #Don't use spaces
   guide: yardım|kılavuz|kullanım|kullanım( )?kılavuzu?|komut(lar)?
-  skriptDocumentation: (?i)(Skript)?Dok(ü(manı?(t(asyonu)?)?)?)?|belge(ler)?i
-  info: (bot)?bilgi(si|leri)?|istatistik(ler)?
+  skriptDocumentation: (Skript)?Dok(ü(manı?(t(asyonu)?)?)?)?|belge(ler)?i
+  info: bot|(bot)?bilgi(si|leri)?|istatistik(ler)?
   names: (sk(ript)?)?isim(leri?)?(listesi)?
-  invites: (davet)?(Adresi?|URL(''?si))
+  invites: adres|url|davet(Adresi?|URL(''?si)?)?
   downloads: İndir(me(ler)?)?|add-?on(lar)?(Liste(si)?)?
+  syntaxMatch: E(ş|s)le(ş|s)(tir)?(me)?|(rastgele)?(syn(tax)?|(kod(Kal(ı|i)(b(ı|i)|p))))(E(ş|s)le(ş|s)((tir)?mesi|tir)|Örne(k(ler)?i?|(ğ|g)i))?|(E(ş|s)le(ş|s)tir)?(Syn(tax)?|(Kod(Kal(ı|i)(b(ı|i)|p))))
   language: dil(ler)?
