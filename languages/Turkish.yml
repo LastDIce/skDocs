@@ -151,7 +151,7 @@ docs:
     queryLengthCantBeGreaterThan200: <mention>, arama kaynağı uzunluğu 200'den fazla olamaz.
 
   availableSections: '**Mevcut Bölümler:** `olaylar`/`koşullar`/`etkiler`/`ifadeler`/`fonksiyonlar`/`tipler` - ve bunların kısaltmaları.'
-  avaiableAddons: Mevcut Addonlar
+  availableAddons: Mevcut Addonlar
   wrongUsageTitle: Yanlış Kullanım
   wrongUsage: <mention>, lütfen yardım için **<prefix>yardım** yaz!
 
@@ -191,9 +191,9 @@ names:
   inventoryActions:
     arguments: env(anter)?( )?eylem(ler)?i
     title: Skript İçin Kullanılabilir Envanter Eylemleri Listesi
-  clickActions:
-    arguments: tık(lama)?( )?eylem(ler)?i
-    title: Skript İçin Kullanılabilir Tıklama Eylemleri Listesi
+  clickTypes:
+    arguments: tık(lama)?( )?tür(leri|ü)?
+    title: Skript İçin Kullanılabilir Tıklama Türleri Listesi
   inventoryTypes:
     arguments: env(anter)?( )?tip(ler)?i
     title: Skript İçin Kullanılabilir Envanter Tipleri Listesi
@@ -240,6 +240,7 @@ downloads:
 syntaxMatch:
   tooLongSyntax: Çok uzun kod kalıbı!
   title: Rastgele Kod Kalıbı Eşleştirmesi
+  error: Kod Kalıbı Hatası
 
 #Language Command
 language:

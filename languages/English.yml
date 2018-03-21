@@ -158,7 +158,7 @@ docs:
     queryLengthCantBeGreaterThan200: <mention>, the search query length can't be greater than 200.
 
   availableSections: '**Available Sections:** `events`/`conditions`/`effects`/`expressions`/`functions`/`types` - and their abbreviations.'
-  avaiableAddons: Available Addons
+  availableAddons: Available Addons
   wrongUsageTitle: Wrong Usage
   wrongUsage: <mention>, please type **<prefix>help** for help!
 
@@ -196,11 +196,11 @@ names:
     arguments: v(isual)?( )?e(ff(ect)?s)?|particles?
     title: Usable Visual Effects List for Skript
   inventoryActions:
-    arguments: inv(entory)?( )?act(ion)?s
+    arguments: inv(entory)?( )?act(ion)?s?
     title: Usable Inventory Actions List for Skript
-  clickActions:
-    arguments: click( )?act(ion)?s
-    title: Usable Click Actions List for Skript
+  clickTypes:
+    arguments: click( )?types?
+    title: Usable Click Types List for Skript
   inventoryTypes:
     arguments: inv(entor(y|ies))?(( )?types?)?
     title: Usable Inventory Types List for Skript
@@ -247,6 +247,7 @@ downloads:
 syntaxMatch:
   tooLongSyntax: Too long syntax!
   title: Random Syntax Match
+  error: Syntax Error
 
 #Language Command
 language:
