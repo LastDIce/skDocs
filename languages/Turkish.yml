@@ -15,9 +15,8 @@ guide:
           value: |
             ```css
             <Arama Kaynağı> (!|-)içeriyor:<Yazılar> (!|-)kaynaklar:<Addonlar/Skript> (!|-)bölümler:<Bölümler> page:<Sayı> id:<Sayı>```**-** Bir etiketten önce **!** veya **-** koymak etiketi negatif yapar.
-            **-** İçeriyor etiketi arama kaynağından hemen sonra gelmek zorunda.
-            **-** İçeriyor etiketi dışında bütün etiketler opsiyonel.
-            **-** Bütün etiketler için birçok takma ad var. **Örnekler:** yazıİçeren, yazıİçeriyor, addonlar, şunun, türler, kategoriler, sayfa, kodID'si, öğe vb...
+            **-** Bütün etiketler isteğe bağlı ve sırası farketmez.
+            **-** Bütün etiketler için birçok eş isim var. **Örnekler:** yazıİçeren, yazıİçeriyor, addonlar, şunun, türler, kategoriler, sayfa, kodID'si, öğe vb...
         '2':
           title: Örnekler
           value: |

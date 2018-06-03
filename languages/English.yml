@@ -25,9 +25,8 @@ guide:
           value: |
             ```css
             <Search Query> (!|-)contains:<Texts> (!|-)sources:<Addons/Skript> (!|-)sections:<Sections> page:<Number> id:<Number>```**-** Putting **!** or **-** before a flag makes the flag negative.
-            **-** Contains flag must come after search query.
-            **-** All flags are optional and the order doesn't matter expect contains flag.
-            **-** There are aliases for all flags. **Examples:** containsText, includesText, addons, from, types, categories, pages, codeID, element etc...
+            **-** All flags are optional and their order doesn't matter.
+            **-** There are many aliases for all flags. **Examples:** containsText, includesText, addons, from, types, categories, pages, codeID, element etc...
         '2':
           title: Examples
           value: |
@@ -172,7 +171,7 @@ names:
     section: Section
     page: page
   enchantments:
-    arguments: ench(anment)?s?(( )?types?)?
+    arguments: ench(antment)?s?(( )?types?)?
     title: Usable Enchantments List for Skript 
   potionEffects:
     arguments: pot(ion)?(( )?eff(ect)?s?)?(( )?types?)?|eff(ect)?s?
