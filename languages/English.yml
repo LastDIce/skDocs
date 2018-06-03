@@ -174,7 +174,7 @@ names:
     arguments: ench(antment)?s?(( )?types?)?
     title: Usable Enchantments List for Skript 
   potionEffects:
-    arguments: pot(ion)?(( )?eff(ect)?s?)?(( )?types?)?|eff(ect)?s?
+    arguments: pot(ion)?(( )?eff(ect)?s?)?(( )?types?)?|eff(ect)?s?|potions?
     title: Usable Potion Effects List for Skript
   biomes:
     arguments: biomes?
@@ -189,7 +189,7 @@ names:
     arguments: chat( )?styles?
     title: Usable Chat Styles List for Skript
   damageCauses:
-    arguments: d(am((a)?ge)?)?( )?c(auses?)?
+    arguments: d(am((a)?ge)?)?( )?c(auses?)?|damages?
     title: Usable Damage Causes List for Skript
   visualEffects: 
     arguments: v(isual)?( )?e(ff(ect)?s)?|particles?

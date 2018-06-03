@@ -167,13 +167,13 @@ names:
     arguments: büyü(ler)?(tip(ler)?i)?
     title: Skript İçin Kullanılabilir Büyü Listesi
   potionEffects:
-    arguments: iksir( )?etki(leri)?(( )?tip(ler)?i)?|etki(ler)?
+    arguments: iksir( )?etki(leri)?(( )?tip(ler)?i)?|etki(ler)?|iksir(ler)?
     title: Skript İçin Kullanılabilir İksir Etkileri Listesi
   biomes:
     arguments: biyom(lar)?
     title: Skript İçin Kullanılabilir Biyom Listesi
   treeTypes:
-    arguments: ağaç(lar)?( )?tür(leri|ü)?
+    arguments: ağaç(lar)?( )?tür(leri|ü)?|ağaç(lar)?
     title: Skript İçin Kullanılabilir Ağaç Türleri Listesi
   colors:
     arguments: renk(ler)?|boya(lar)?
@@ -182,7 +182,7 @@ names:
     arguments: sohbet( )?stil(ler)?i
     title: Skript İçin Kullanılabilir Sohbet Stilleri Listesi
   damageCauses:
-    arguments: h(asar)?( )?sebe(pler|b)?i
+    arguments: h(asar)?( )?sebe(pler|b)?i|hasar(lar)?
     title: Skript İçin Kullanılabilir Hasar Sebepleri Listesi
   visualEffects: 
     arguments: sanal( )?efekt(ler)?|parçacık(lar)?
