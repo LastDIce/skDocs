@@ -251,7 +251,7 @@ syntaxMatch:
 #Language Command
 language:
   botLanguageTitle: Bot Language
-  onlyOwner: Only the server owner and `Blueyescat#0733` can use this command.
+  onlyAdmin: This command can only be used by members with the **Administrator** permission.
   noArgument: |
     Type **<prefix> language <Language>** to change language of the bot for this server.
     

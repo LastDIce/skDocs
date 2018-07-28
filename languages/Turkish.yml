@@ -243,7 +243,7 @@ syntaxMatch:
 
 #Language Command
 language:
-  onlyOwner: Bu komutu sadece sunucu sahibi ve `Blueyescat#0733` kullanabilir.
+  onlyAdmin: Bu komutu sadece **Yönetici** yetkisine sahip üyeler kullanabilir.
   noArgument: |
     Bu sunucu için botun dilini değiştirmek için **<prefix> dil <dil>** yaz.
     
