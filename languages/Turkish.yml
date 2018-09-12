@@ -1,5 +1,5 @@
 ms: ms
-invalidCodeBlock: Geçersiz Kod Bloğu!
+invalidCodeBlock: Geçersiz kod bloğu!
 
 #Guide Command
 guide:
@@ -67,6 +67,7 @@ docs:
   codeID: Kod ID'si
   search:
     found1Result: Sadece 1 sonuç bulundu, direkt olarak onun bilgileri gösteriliyor.
+    searchTook: Arama <time> sürdü
     nothingFound: Bu arama kaynağı ve etiketler ile eşleşen hiçbir şey bulunamadı.
     query-everything:
     - '*'
@@ -213,7 +214,7 @@ botInfo:
   documentCount: Toplam Belge Sayısı
   joinServerDate: Sunucuya Katılma Zamanı
   created: '**Oluşturuldu:** ``@Blueyescat#0733`` tarafından 3 Ağustos 2017''de'
-  gitHubTitle: Sorun İzleyicisi ve Dil Yönetimi
+  GitHubTitle: Sorun İzleyicisi ve Dil Yönetimi
 
 #Invites Command
 invites:
@@ -243,6 +244,7 @@ syntaxMatch:
 
 #Language Command
 language:
+  botLanguageTitle: Bot Dili
   onlyAdmin: Bu komutu sadece **Yönetici** yetkisine sahip üyeler kullanabilir.
   noArgument: |
     Bu sunucu için botun dilini değiştirmek için **<prefix> dil <dil>** yaz.
@@ -261,5 +263,6 @@ commands:
   names: (sk(ript)?)?isim(leri?)?(listesi)?
   invites: adres|url|davet(Adresi?|URL(''?si)?)?
   downloads: İndir(me(ler)?)?|add-?on(lar)?(Liste(si)?)?
+  downloadsOnlyAddons: add-?on(lar)?(Liste(si)?)?
   syntaxMatch: E(ş|s)le(ş|s)(tir)?(me)?|(rastgele)?(syn(tax)?|(kod(Kal(ı|i)(b(ı|i)|p))))(E(ş|s)le(ş|s)((tir)?mesi|tir)|Örne(k(ler)?i?|(ğ|g)i))?|(E(ş|s)le(ş|s)tir)?(Syn(tax)?|(Kod(Kal(ı|i)(b(ı|i)|p))))
   language: dil(ler)?

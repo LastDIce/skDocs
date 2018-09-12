@@ -77,6 +77,7 @@ docs:
   codeID: Code ID
   search:
     found1Result: Found only 1 result, showing its info directly.
+    searchTook: Search took <time> #Search took 10ms
     nothingFound: Nothing related to this query and flags was found.
     query-everything:
     - '*'
@@ -220,7 +221,7 @@ botInfo:
   documentCount: Total Number of Documents
   joinServerDate: Join Server Date
   created: '**Created:** by ``@Blueyescat#0733`` on August 3, 2017'
-  gitHubTitle: Issue Tracker and Language Management
+  GitHubTitle: Issue Tracker and Language Management
 
 #Invites Command
 invites:
@@ -269,5 +270,6 @@ commands:
   names: (sk(ript)?)?names?(list)?
   invites: (inv(ite)?|join)?(Link|URL)?s?
   downloads: Down?(load)?s?|skript|aliases|add-?ons?(List)?|(list)?Add-?ons?
+  downloadsOnlyAddons: add-?ons?(List)?|(list)?Add-?ons?
   syntaxMatch: (random)?syn(tax)?(Match|Examples?)?|match(Syn(tax)?)?
   language: lang(uage)?s?
