@@ -208,6 +208,36 @@ names:
     arguments: entit(ies|y)( )?(types?)?
     title: Usable Entity Types List for Skript
 
+#Parse Command
+parse:
+  wrongUsage: Wrong Usage
+  noArgument: |
+    ``<Skript Code to Parse>`` - supports code blocks
+    
+    You can use [Gist](https://gist.github.com), [hastebin](https://www.hastebin.com) or [Pastebin](https://www.pastebin.com) paste link for the code.
+  cooldown: <mention>, please slow down!
+  invalidPasteServiceTitle: Invalid Paste Service
+  invalidPasteService: Only [Gist](https://gist.github.com), [hastebin](https://www.hastebin.com) and [Pastebin](https://www.pastebin.com) services are supported.
+  invalidPasteTitle: Invalid Paste
+  invalidPaste: This paste is expired or invalid.
+  CODE: CODE
+  ERROR: ERROR
+  oneMistake: There is a mistake in the code!
+  mistakes: There are <count> mistakes in the code!
+  parseTime: Parse Time
+  lines: Lines
+  length: Length
+  skriptParserTitle: Skript Parser Error Logs
+  sender: Sender
+  scriptLines: Script Lines
+  scriptLength: Script Length
+  errors: Errors
+  ERRORS: ERRORS
+  SCRIPT: SCRIPT
+  tooLongErrors: The errors are so long, [**click here**](<gist url>) to view the errors.
+  correctCode: The code is completely correct!
+  tooLongCode: The code is too long!
+
 #Bot Info Command
 botInfo:
   title: Bot Info
@@ -264,12 +294,13 @@ language:
 
 commands:
   #Don't use spaces
-  guide: help|guide|co?m(man)?ds?
-  skriptDocumentation: (Sk(ript)?)?Doc(ument(ation)?)?s?
-  info: bot|(bot)?(info(rmation)?|Stat(istic)?s)
-  names: (sk(ript)?)?names?(list)?
-  invites: (inv(ite)?|join)?(Link|URL)?s?
-  downloads: Down?(load)?s?|skript|aliases|add-?ons?(List)?|(list)?Add-?ons?
-  downloadsOnlyAddons: add-?ons?(List)?|(list)?Add-?ons?
-  syntaxMatch: (random)?syn(tax)?(Match|Examples?)?|match(Syn(tax)?)?
-  language: lang(uage)?s?
+  guide: help|guide|co?m(man)?ds?(list)?
+  skriptDocumentation: (sk(ript)?-?)?doc(ument(ation)?)?s?
+  info: bot|(bot-?)?(info(rmation)?|stat(istic)?s)
+  names: (sk(ript)?-?)?names?(-?list)?
+  parse: (sk(ript)?-?)?parser?|parse-?sk(ript)?
+  invites: (inv(ite)?-?|join-?)?(link|URL)?s?
+  downloads: down?(load)?s?|skript|aliases|add-?ons?-?(list)?|(list-?)?add-?ons?
+  downloadsOnlyAddons: add-?ons?-?(list)?|(list-?)?add-?ons?
+  syntaxMatch: (random-?)?syn(tax)?-?(match|examples?)?|match(-?syn(tax)?)?
+  language: (change-?)?lang(uage)?s?

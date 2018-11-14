@@ -201,6 +201,36 @@ names:
     arguments: varlık(lar)?(( )?tip(ler)?i)?
     title: Skript İçin Kullanılabilir Varlık Listesi
 
+#Parse Command
+parse:
+  wrongUsage: Yanlış Kullanım
+  noArgument: |
+    ``<Ayrıştırılacak Skript Kodu>`` - kod blokları destekliyor
+    
+    Kod için [Gist](https://gist.github.com), [hastebin](https://www.hastebin.com) veya [Pastebin](https://www.pastebin.com) bağlantısı kullanabilirsin.
+  cooldown: <mention>, lütfen yavaşla!
+  invalidPasteServiceTitle: Geçersiz Paste Servisi
+  invalidPasteService: Sadece [Gist](https://gist.github.com), [hastebin](https://www.hastebin.com) ve [Pastebin](https://www.pastebin.com) servisleri destekleniyor.
+  invalidPasteTitle: Geçersiz Paste
+  invalidPaste: Bu paste geçersiz veya süresi doldu.
+  CODE: KOD
+  ERROR: HATA
+  oneMistake: Kodda bir hata var!
+  mistakes: Kodda <count> tane hata var!
+  parseTime: Ayrıştırılma Süresi
+  lines: Satırlar
+  length: Uzunluk
+  skriptParserTitle: Skript Ayrıştırıcı Hata Kayıtları
+  sender: Gönderici
+  scriptLines: Script Satırları
+  scriptLength: Script Uzunluğu
+  errors: Hatalar
+  ERRORS: HATALAR
+  SCRIPT: SCRIPT
+  tooLongErrors: Hatalar çok uzun, görüntülemek için [**buraya tıkla**](<gist url>).
+  correctCode: Kod tamamen doğru!
+  tooLongCode: Kod çok uzun!
+
 #Bot Info Command
 botInfo:
   title: Bot Bilgisi
@@ -256,13 +286,13 @@ language:
   specialThanks: skDocs'u bu dile çevirdikleri için <translators>'e teşekkürler.
 
 commands:
-  #Don't use spaces
-  guide: yardım|kılavuz|kullanım|kullanım( )?kılavuzu?|komut(lar)?
-  skriptDocumentation: (Skript)?Dok(ü(manı?(t(asyonu)?)?)?)?|belge(ler)?i
-  info: bot|(bot)?bilgi(si|leri)?|istatistik(ler)?
-  names: (sk(ript)?)?isim(leri?)?(listesi)?
+  guide: yardım|kılavuz|kullanım|kullanım-?kılavuzu?|komut(lar|-?listesi)?
+  skriptDocumentation: (sk(ript)?-?)?dok(ü(manı?(t(asyonu)?)?)?)?|belge(ler)?i
+  info: bot|(bot-?)?bilgi(si|leri)?|istatistik(ler)?
+  names: (sk(ript)?-?)?isim(leri?)?(-?listesi)?
+  parse: (sk(ript)?-?)?parser?|parse-?sk(ript)?|(sk(ript)?-?)?ayr(ı|i)(ş|s)tır(ıcı)?|ayr(ı|i)(ş|s)tır-?sk(ript)?
   invites: adres|url|davet(Adresi?|URL(''?si)?)?
-  downloads: İndir(me(ler)?)?|add-?on(lar)?(Liste(si)?)?
-  downloadsOnlyAddons: add-?on(lar)?(Liste(si)?)?
-  syntaxMatch: E(ş|s)le(ş|s)(tir)?(me)?|(rastgele)?(syn(tax)?|(kod(Kal(ı|i)(b(ı|i)|p))))(E(ş|s)le(ş|s)((tir)?mesi|tir)|Örne(k(ler)?i?|(ğ|g)i))?|(E(ş|s)le(ş|s)tir)?(Syn(tax)?|(Kod(Kal(ı|i)(b(ı|i)|p))))
-  language: dil(ler)?
+  downloads: İndir(me(ler)?)?|add-?on(lar)?(-?liste(si)?)?
+  downloadsOnlyAddons: add-?on(lar)?(-?liste(si)?)?
+  syntaxMatch: e(ş|s)le(ş|s)(tir)?(me)?|(rastgele-?)?(syn(tax)?|(kod(kal(ı|i)(b(ı|i)|p))))(-?E(ş|s)le(ş|s)((tir)?mesi|tir)|-?örne(k(ler)?i?|(ğ|g)i))?|(e(ş|s)le(ş|s)tir)?(-?syn(tax)?|-?(kod(kal(ı|i)(b(ı|i)|p))))
+  language: dil(ler)?|dil-?değiştir?
