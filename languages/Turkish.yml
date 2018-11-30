@@ -168,37 +168,40 @@ names:
     arguments: büyü(ler)?(tip(ler)?i)?
     title: Skript İçin Kullanılabilir Büyü Listesi
   potionEffects:
-    arguments: iksir( )?etki(leri)?(( )?tip(ler)?i)?|etki(ler)?|iksir(ler)?
+    arguments: iksir ?etki(leri)?( ?tip(ler)?i)?|etki(ler)?|iksir(ler)?
     title: Skript İçin Kullanılabilir İksir Etkileri Listesi
   biomes:
     arguments: biyom(lar)?
     title: Skript İçin Kullanılabilir Biyom Listesi
   treeTypes:
-    arguments: ağaç(lar)?( )?tür(leri|ü)?|ağaç(lar)?
+    arguments: ağaç(lar)? ?tür(leri|ü)?|ağaç(lar)?
     title: Skript İçin Kullanılabilir Ağaç Türleri Listesi
   colors:
     arguments: renk(ler)?|boya(lar)?
     title: Skript İçin Kullanılabilir Renk Listesi
   chatStyles:
-    arguments: sohbet( )?stil(ler)?i
+    arguments: sohbet ?stil(ler)?i
     title: Skript İçin Kullanılabilir Sohbet Stilleri Listesi
   damageCauses:
-    arguments: h(asar)?( )?sebe(pler|b)?i|hasar(lar)?
+    arguments: h(asar)? ?sebe(pler|b)?i|hasar(lar)?
     title: Skript İçin Kullanılabilir Hasar Sebepleri Listesi
   visualEffects: 
-    arguments: sanal( )?efekt(ler)?|parçacık(lar)?
+    arguments: sanal ?efekt(ler)?|parçacık(lar)?
     title: Skript İçin Kullanılabilir Sanal Efektler Listesi
   inventoryActions:
-    arguments: env(anter)?( )?eylem(ler)?i
+    arguments: env(anter)? ?eylem(ler)?i
     title: Skript İçin Kullanılabilir Envanter Eylemleri Listesi
   clickTypes:
-    arguments: tık(lama)?( )?tür(leri|ü)?
+    arguments: tık(lama)? ?tür(leri|ü)?
     title: Skript İçin Kullanılabilir Tıklama Türleri Listesi
   inventoryTypes:
-    arguments: env(anter)?( )?tip(ler)?i
+    arguments: env(anter)? ?tip(ler)?i
     title: Skript İçin Kullanılabilir Envanter Tipleri Listesi
+  spawnReasons:
+    arguments: (oluşma|spa?wn) ?(sebepleri?|sebebi)
+    title: Skript İçin Kullanılabilir Oluşma (Spawn) Sebepleri Listesi
   entityTypes:
-    arguments: varlık(lar)?(( )?tip(ler)?i)?
+    arguments: varlık(lar)?( ?tip(ler)?i)?
     title: Skript İçin Kullanılabilir Varlık Listesi
 
 #Parse Command

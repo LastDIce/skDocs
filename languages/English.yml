@@ -172,40 +172,43 @@ names:
     section: Section
     page: page
   enchantments:
-    arguments: ench(antment)?s?(( )?types?)?
+    arguments: ench(antment)?s?( ?types?)?
     title: Usable Enchantments List for Skript 
   potionEffects:
-    arguments: pot(ion)?(( )?eff(ect)?s?)?(( )?types?)?|eff(ect)?s?|potions?
+    arguments: pot(ion)?( ?eff(ect)?s?)?( ?types?)?|eff(ect)?s?|potions?
     title: Usable Potion Effects List for Skript
   biomes:
     arguments: biomes?
     title: Usable Potion Effects List for Skript
   treeTypes:
-    arguments: trees?(( )?types?)?
+    arguments: trees?( ?types?)?
     title: Usable Tree Types List for Skript
   colors:
     arguments: colo(u)?rs?|dyes?
     title: Usable Colors List for Skript
   chatStyles:
-    arguments: chat( )?styles?
+    arguments: chat ?styles?
     title: Usable Chat Styles List for Skript
   damageCauses:
-    arguments: d(am((a)?ge)?)?( )?c(auses?)?|damages?
+    arguments: d(am((a)?ge)?)? ?c(auses?)?|damages?
     title: Usable Damage Causes List for Skript
   visualEffects: 
-    arguments: v(isual)?( )?e(ff(ect)?s)?|particles?
+    arguments: v(isual)? ?e(ff(ect)?s)?|particles?
     title: Usable Visual Effects List for Skript
   inventoryActions:
-    arguments: inv(entory)?( )?act(ion)?s?
+    arguments: inv(entory)? ?act(ion)?s?
     title: Usable Inventory Actions List for Skript
   clickTypes:
-    arguments: click( )?types?
+    arguments: click ?types?
     title: Usable Click Types List for Skript
   inventoryTypes:
-    arguments: inv(entor(y|ies))?(( )?types?)?
+    arguments: inv(entor(y|ies))?( ?types?)?
     title: Usable Inventory Types List for Skript
+  spawnReasons:
+    arguments: spa?wn(ing)? ?reasons?
+    title: Usable Spawn Reasons List for Skript
   entityTypes:
-    arguments: entit(ies|y)( )?(types?)?
+    arguments: entit(ies|y) ?(types?)?
     title: Usable Entity Types List for Skript
 
 #Parse Command
