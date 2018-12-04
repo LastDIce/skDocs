@@ -3,7 +3,7 @@
 # <mention> = Mention tag of the user
 # <nl> = New line
 # <plural:text> = Means the text will be shown only if the value is plural. Example: Apple<plural:s>
-# <plural:text1||text2> = Means the text1 will be shown only if the value is plural. If not, text2 will be shown.
+# <...plural:text1||text2> = Means the text1 will be shown only if the value is plural. If not, text2 will be shown.
 
 #You can remove comment lines while translating if you want.
 
@@ -225,19 +225,23 @@ parse:
   invalidPaste: This paste is expired or invalid.
   CODE: CODE
   ERROR: ERROR
-  oneMistake: There is a mistake in the code!
-  mistakes: There are <count> mistakes in the code!
+  WARNING: WARNING
+  errors: ':x: There <plural:are <count> errors||is an error> in the code!'
+  warnings: ':warning: There <plural:are <count> warnings||is a warning> in the code!'
+  errorsAndWarnings: ':x: There <error plural:are <error count> errors||is an error> and <warning plural:<warning count> warnings||a warning> in the code! :warning:'
   parseTime: Parse Time
   lines: Lines
   length: Length
-  skriptParserTitle: Skript Parser Error Logs
+  skriptParserTitle: Skript Parser Results
   sender: Sender
   scriptLines: Script Lines
   scriptLength: Script Length
-  errors: Errors
+  errorsTitle: Errors
+  warningsTitle: Warnings
   ERRORS: ERRORS
-  SCRIPT: SCRIPT
-  tooLongErrors: The errors are so long, [**click here**](<gist url>) to view the errors.
+  WARNINGS: WARNINGS
+  CODE: CODE
+  resultsLink: '[**Click here**](<gist url>) to view the results.'
   correctCode: The code is completely correct!
   tooLongCode: The code is too long!
 

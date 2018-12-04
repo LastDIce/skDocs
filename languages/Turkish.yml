@@ -218,19 +218,23 @@ parse:
   invalidPaste: Bu paste geçersiz veya süresi doldu.
   CODE: KOD
   ERROR: HATA
-  oneMistake: Kodda bir hata var!
-  mistakes: Kodda <count> tane hata var!
+  WARNING: UYARI
+  errors: ':x: Kodda <plural:<count> tane||bir> hata var!'
+  warnings: ':warning: Kodda <plural:<count> tane||bir> uyarı var!'
+  errorsAndWarnings: ':x: Kodda <error plural:<error count> tane||bir> hata ve <warning plural:<warning count> tane||bir> uyarı var! :warning:'
   parseTime: Ayrıştırılma Süresi
   lines: Satırlar
   length: Uzunluk
-  skriptParserTitle: Skript Ayrıştırıcı Hata Kayıtları
+  skriptParserTitle: Skript Ayrıştırıcısı Sonuçları
   sender: Gönderici
   scriptLines: Script Satırları
   scriptLength: Script Uzunluğu
-  errors: Hatalar
+  errorsTitle: Hatalar
+  warningsTitle: Uyarılar
   ERRORS: HATALAR
-  SCRIPT: SCRIPT
-  tooLongErrors: Hatalar çok uzun, görüntülemek için [**buraya tıkla**](<gist url>).
+  WARNINGS: UYARILAR
+  CODE: KOD
+  resultsLink: Sonuçları görüntülemek için [**buraya tıkla**](<gist url>).
   correctCode: Kod tamamen doğru!
   tooLongCode: Kod çok uzun!
 
