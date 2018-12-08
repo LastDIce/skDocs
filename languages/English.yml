@@ -215,14 +215,16 @@ names:
 parse:
   wrongUsage: Wrong Usage
   noArgument: |
-    ``<Skript Code to Parse>`` - supports code blocks
+    ``<Skript Code to Parse>`` - supports code block
     
-    You can use [Gist](https://gist.github.com), [hastebin](https://www.hastebin.com) or [Pastebin](https://www.pastebin.com) paste link for the code.
+    You can use [Gist](https://gist.github.com), [GitHub](https://github.com) (File), [hastebin](https://www.hastebin.com) or [Pastebin](https://www.pastebin.com) link for the code.
   cooldown: <mention>, please slow down!
-  invalidPasteServiceTitle: Invalid Paste Service
-  invalidPasteService: Only [Gist](https://gist.github.com), [hastebin](https://www.hastebin.com) and [Pastebin](https://www.pastebin.com) services are supported.
-  invalidPasteTitle: Invalid Paste
-  invalidPaste: This paste is expired or invalid.
+  invalidLinkTitle: Invalid Link
+  invalidLink: Only [Gist](https://gist.github.com), [GitHub](https://github.com) (File), [hastebin](https://www.hastebin.com) and [Pastebin](https://www.pastebin.com) links are supported.
+  invalidFileTitle: Invalid Paste/File
+  invalidFile: This paste/file is invalid or expired.
+  unsupportedFileTypeTitle: Invalid File
+  unsupportedFileType: 'Unsupported file type: `<extension>`'
   CODE: CODE
   ERROR: ERROR
   WARNING: WARNING

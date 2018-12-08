@@ -210,12 +210,14 @@ parse:
   noArgument: |
     ``<Ayrıştırılacak Skript Kodu>`` - kod blokları destekliyor
     
-    Kod için [Gist](https://gist.github.com), [hastebin](https://www.hastebin.com) veya [Pastebin](https://www.pastebin.com) bağlantısı kullanabilirsin.
+    Kod için [Gist](https://gist.github.com), [GitHub](https://github.com) (Dosya), [hastebin](https://www.hastebin.com) veya [Pastebin](https://www.pastebin.com) bağlantısı kullanabilirsiniz.
   cooldown: <mention>, lütfen yavaşla!
-  invalidPasteServiceTitle: Geçersiz Paste Servisi
-  invalidPasteService: Sadece [Gist](https://gist.github.com), [hastebin](https://www.hastebin.com) ve [Pastebin](https://www.pastebin.com) servisleri destekleniyor.
-  invalidPasteTitle: Geçersiz Paste
-  invalidPaste: Bu paste geçersiz veya süresi doldu.
+  invalidLinkTitle: Geçersiz Link
+  invalidLink: Sadece [Gist](https://gist.github.com), [GitHub](https://github.com) (Dosya), [hastebin](https://www.hastebin.com) ve [Pastebin](https://www.pastebin.com) bağlantıları destekleniyor.
+  invalidFileTitle: Geçersiz Paste/Dosya
+  invalidFile: Bu paste/dosya geçersiz veya süresi dolmuş.
+  unsupportedFileTypeTitle: Geçersiz File
+  unsupportedFileType: 'Desteklenmeyen dosya türü: `<extension>`'
   CODE: KOD
   ERROR: HATA
   WARNING: UYARI
