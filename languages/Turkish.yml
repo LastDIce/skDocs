@@ -294,7 +294,7 @@ language:
     **Mevcut Diller:**
     <languages>
   languageChanged: 'Başarıyla bu sunucu için botun dili **Türkçe** olarak belirlendi.'
-  specialThanks: 'skDocs'u bu dile çevirdikleri için teşekkürler:'
+  specialThanks: 'skDocs''u bu dile çevirdikleri için teşekkürler:'
 
 commands:
   guide: yardım|kılavuz|kullanım|kullanım-?kılavuzu?|komut(lar|-?listesi)?
