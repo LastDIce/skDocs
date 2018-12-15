@@ -297,9 +297,8 @@ language:
     
     **Available Languges:**
     <languages>
-  by: (by <translators>)
   languageChanged: 'Successfully changed language of the bot for this server to **English**.'
-  specialThanks: Thanks to <translators> for translating skDocs into this language!
+  specialThanks: Thanks for translating skDocs into this language:
 
 commands:
   #Don't use spaces
