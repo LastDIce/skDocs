@@ -12,7 +12,8 @@ Up to date, fast, reliable, featured and proper Skript documentation Discord bot
 If you want to translate skDocs to another language, fork this repository and take [English.yml](https://github.com/Blueyescat/skDocs/blob/master/languages/English.yml) as base template. You can make Pull Request to send your translate.
 If you need help about translating, feel free to send me a direct message on Discord.
 
-## Contact
+## Discord
 - Blueyescat#0733
-- [Skript Hub Discord Server](https://skripthub.net/discord)
-- [Skript Chat Discord Server](https://discord.gg/wfkUMXZ)
+- [Skript Hub Server](https://skripthub.net/discord) (Global)
+- [Skript Chat Server](https://discord.gg/tMhwDmC) (Global)
+- [Skript Topluluğu Server](https://discord.gg/UuNuz5Y) (Turkish)
