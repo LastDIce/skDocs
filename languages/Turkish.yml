@@ -21,22 +21,22 @@ guide:
           title: Örnekler
           value: |
             **!sk docs** file 
-             *`- "file" içeren her şeyi ara.`*
+             *`- "file" içeren her şey`*
              
             **!sk docs** bossbar **kaynak:**skRayFall **bölümler:**Etkiler,İfadeler
-             *`- "bossbar" içeren, skRayFall addonundan, sadece etki ve ifadeler.`*
+             *`- skRayFall addonundan "bossbar" içeren etkiler ve ifadeler`*
              
             **!sk docs** tree **içeriyor:**type **böl:**tipler **kaynaklar:**Skript
-             *`- "tree" ve "type" içeren, Skript'ten ve sadece tipler.`*
+             *`- Skript'in bütün "tree" ve "type" içeren tipleri (type)`*
             
             **!sk docs** subtext **id:**1
-             *`- "subtext" içeren sonuçlardan 1 ID'li kod.`*
+             *`- "subtext" içeren sonuçlardan 1 ID'li kodun bilgileri`*
             
             **!sk docs** * **!içeriyor:**message -- embed **şunun:**Vixio **kategori:**etkiler
-             *`- Vixio addonundan "message" ve "embed" içermeyen etkileri listele.`*
+             *`- Vixio addonundan "message" ve "embed" içermeyen bütün etkiler (effect)`*
             
             **!sk docs** inventory **!içer:**open -- blank **add-on:**skQuery,TuSKe
-             *`- "inventory" içeren, "open" ve "blank" içermeyen, skQuery ve TuSKe addonlarından, sadece ifadeler.`*
+             *`- TuSKe ve skQuery addonlarından "inventory" içeren ama "open" ve "blank" içermeyen ifadeler (expression)`*
     '3':
       title: Diğer Komutlar
       value: |        

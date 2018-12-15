@@ -31,22 +31,22 @@ guide:
           title: Examples
           value: |
             **!sk docs** file 
-             *`- Search for everything that contains "file".`*
+             *`- Everything that contains "file".`*
              
             **!sk docs** bossbar **source:**skRayFall **section:**Effects,Expressions
-             *`- Contains "bossbar", from skRayFall addon, only effects and expressions.`*
+             *`- All effects and expressions from skRayFall addon that contains "bossbar"`*
              
             **!sk docs** tree **contains:**type **sec:**types **from:**Skript
-             *`- Contains "tree" and "type", from Skript and only types.`*
+             *`- All types from Skript that contains "tree" and "type"`*
             
             **!sk docs** subtext **id:**1
-             *`- Code with ID 1 from results that contains "subtext".`*
+             *`- Info of code with ID 1 from the results that contains "subtext"`*
             
             **!sk docs** * **!contains:**message -- embed **of:**Vixio **category:**effs
-             *`- List every effects that doesn't contain "message" and "embed" from Vixio addon.`*
+             *`- All effects from Vixio addon that doesn't contain "message" and "embed"`*
             
             **!sk docs** inventory **!cont:**open -- blank **addon:**skQuery,TuSKe
-             *`- Contains "inventory", doesn't contain "open" and "blank", from skQuery and TuSKe addons, only expressions.`*
+             *`- Everything from TuSKe and skQuery addons that contains "inventory" but doesn't contain "open" and "blank"`*
     '3':
       title: Other Commands
       value: |
