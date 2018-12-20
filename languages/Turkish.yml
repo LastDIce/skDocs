@@ -239,7 +239,7 @@ parse:
   ERRORS: HATALAR
   WARNINGS: UYARILAR
   CODE: KOD
-  resultsLink: Sonuçları görüntülemek için [**buraya tıkla**](<gist url>).
+  resultsLink: Sonuçları görüntülemek için [**buraya tıkla**](<url>).
   correctCode: Kod tamamen doğru!
   tooLongCode: Kod çok uzun!
 
