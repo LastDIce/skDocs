@@ -14,6 +14,7 @@ If you need help about translating, feel free to send me a direct message on Dis
 
 ## Discord
 - Blueyescat#0733
+- [**My personal Discord Server**](https://discord.gg/ayvQQtq) (Global)
 - [Skript Hub Server](https://skripthub.net/discord) (Global)
 - [Skript Chat Server](https://discord.gg/tMhwDmC) (Global)
 - [Skript Topluluğu Server](https://discord.gg/UuNuz5Y) (Turkish)
