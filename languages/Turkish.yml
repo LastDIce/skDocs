@@ -42,7 +42,7 @@ guide:
              *`- TuSKe ve skQuery addonlarından "inventory" içeren ama "open" ve "blank" içermeyen ifadeler (expression)`*
     '3':
       title: Diğer Komutlar
-      value: |        
+      value: |
         :low_brightness: **!sk bilgi** - **!sk istatistikler** *- Bot hakkında bazı bilgiler al.*
         
         :low_brightness: **!sk isim** - **!sk isimListesi** - **!sk skriptİsimleri** *- Skript'te bazı şeylerin isimlerini listeler. Büyüler, ağaçlar, iksir etkileri, varlıklar gibi. Kullanımı için komutu yazın. *
@@ -239,7 +239,7 @@ parse:
   ERRORS: HATALAR
   WARNINGS: UYARILAR
   CODE: KOD
-  resultsLink: Sonuçları görüntülemek için [**buraya tıkla**](<url>).
+  resultsLink: Sonuçları görüntülemek için [**buraya tıklayınız**](<url>) veya zaten açıksa sayfayı yenileyebilirsiniz.
   correctCode: Kod tamamen doğru!
   tooLongCode: Kod çok uzun!
 
