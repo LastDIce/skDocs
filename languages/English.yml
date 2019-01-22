@@ -280,7 +280,7 @@ downloads:
     addons: (sk(ript)?)?add-?ons?
     aliases: (english)?(sk(ript)?)?alias(es)?(file)?
     spigot: spigot
-    paperspigot: paper(spigot)?
+    paperspigot: paper(mc|clip|spigot)?
 
 #Syntax Match Command
 syntaxMatch:

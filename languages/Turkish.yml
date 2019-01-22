@@ -276,7 +276,7 @@ downloads:
     addons: (sk(ript)?)?add-?on(ları?)?
     aliases: (ingilizce)?(sk(ript)?)?alias(es)?(dosya(sı)?)?
     spigot: spigot
-    paperspigot: paper(spigot)?
+    paperspigot: paper(mc|clip|spigot)?
  
 #Syntax Match Command
 syntaxMatch:
