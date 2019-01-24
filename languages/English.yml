@@ -232,6 +232,7 @@ parse:
   warnings: ':warning: There <plural:are <count> warnings||is a warning> in the code!'
   errorsAndWarnings: ':x: There <error plural:are <error count> errors||is an error> and <warning plural:<warning count> warnings||a warning> in the code! :warning:'
   parseTime: Parse Time
+  line: Line
   lines: Lines
   length: Length
   skriptParserTitle: Skript Parser Results

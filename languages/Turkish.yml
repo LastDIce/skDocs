@@ -228,6 +228,7 @@ parse:
   warnings: ':warning: Kodda <plural:<count> tane||bir> uyarı var!'
   errorsAndWarnings: ':x: Kodda <error plural:<error count> tane||bir> hata ve <warning plural:<warning count> tane||bir> uyarı var! :warning:'
   parseTime: Ayrıştırılma Süresi
+  line: Satır
   lines: Satırlar
   length: Uzunluk
   skriptParserTitle: Skript Ayrıştırıcısı Sonuçları
