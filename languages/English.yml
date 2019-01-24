@@ -276,11 +276,11 @@ downloads:
   aliases: Aliases
   addonDownloadTitle: Download Link for the Latest <addon> Version
   arguments:
-    skript: sk(ript)? 
+    skript: sk(ript)?(\.?jar)?
     addons: (sk(ript)?)?add-?ons?
     aliases: (english)?(sk(ript)?)?alias(es)?(file)?
     spigot: spigot
-    paperspigot: paper(mc|clip|spigot)?
+    paper: paper(mc|clip|spigot)?
 
 #Syntax Match Command
 syntaxMatch:

@@ -272,11 +272,11 @@ downloads:
   aliases: Aliases
   addonDownloadTitle: Son Sürüm <addon> İçin İndirme Adresi
   arguments:
-    skript: sk(ript)? 
+    skript: sk(ript)?(\.?jar)?
     addons: (sk(ript)?)?add-?on(ları?)?
     aliases: (ingilizce)?(sk(ript)?)?alias(es)?(dosya(sı)?)?
     spigot: spigot
-    paperspigot: paper(mc|clip|spigot)?
+    paper: paper(mc|clip|spigot)?
  
 #Syntax Match Command
 syntaxMatch:
