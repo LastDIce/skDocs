@@ -305,6 +305,7 @@ commands:
   invites: adres|url|davet(Adresi?|URL(''?si)?)?
   downloads:
     all: İndir(me(ler)?)?|skript|aliases|add-?on(lar)?(-?liste(si)?)?
+    skript: skript(\.?jar)?
     aliases: aliases
     addons: add-?on(lar)?(-?liste(si)?)?
   syntaxMatch: e(ş|s)le(ş|s)(tir)?(me)?|(rastgele-?)?(syn(tax)?|(kod(kal(ı|i)(b(ı|i)|p))))(-?E(ş|s)le(ş|s)((tir)?mesi|tir)|-?örne(k(ler)?i?|(ğ|g)i))?|(e(ş|s)le(ş|s)tir)?(-?syn(tax)?|-?(kod(kal(ı|i)(b(ı|i)|p))))
