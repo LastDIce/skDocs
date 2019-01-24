@@ -303,7 +303,9 @@ commands:
   names: (sk(ript)?-?)?isim(leri?)?(-?listesi)?
   parse: (sk(ript)?-?)?parser?|parse-?sk(ript)?|(sk(ript)?-?)?ayr(ı|i)(ş|s)tır(ıcı)?|ayr(ı|i)(ş|s)tır-?sk(ript)?
   invites: adres|url|davet(Adresi?|URL(''?si)?)?
-  downloads: İndir(me(ler)?)?|add-?on(lar)?(-?liste(si)?)?
-  downloadsOnlyAddons: add-?on(lar)?(-?liste(si)?)?
+  downloads:
+    all: İndir(me(ler)?)?|skript|aliases|add-?on(lar)?(-?liste(si)?)?
+    aliases: aliases
+    addons: add-?on(lar)?(-?liste(si)?)?
   syntaxMatch: e(ş|s)le(ş|s)(tir)?(me)?|(rastgele-?)?(syn(tax)?|(kod(kal(ı|i)(b(ı|i)|p))))(-?E(ş|s)le(ş|s)((tir)?mesi|tir)|-?örne(k(ler)?i?|(ğ|g)i))?|(e(ş|s)le(ş|s)tir)?(-?syn(tax)?|-?(kod(kal(ı|i)(b(ı|i)|p))))
   language: dil(ler)?|dil-?değiştir?
