@@ -225,26 +225,16 @@ parse:
   invalidFile: This paste/file is invalid or expired.
   unsupportedFileTypeTitle: Invalid File
   unsupportedFileType: 'Unsupported file type: `<extension>`'
-  CODE: CODE
-  ERROR: ERROR
-  WARNING: WARNING
   errors: ':x: There <plural:are <count> errors||is an error> in the code!'
   warnings: ':warning: There <plural:are <count> warnings||is a warning> in the code!'
   errorsAndWarnings: ':x: There <error plural:are <error count> errors||is an error> and <warning plural:<warning count> warnings||a warning> in the code! :warning:'
   parseTime: Parse Time
   line: Line
+  error: Error
   lines: Lines
   length: Length
-  skriptParserTitle: Skript Parser Results
-  sender: Sender
-  scriptLines: Script Lines
-  scriptLength: Script Length
-  errorsTitle: Errors
   warningsTitle: Warnings
-  ERRORS: ERRORS
-  WARNINGS: WARNINGS
-  CODE: CODE
-  resultsLink: '[**Click here**](<url>) to view the results or refresh the page if you have it already open.'
+  resultsLink: '[**Click here**](<url>) to view the results or you can refresh the page if you have it already open.'
   correctCode: The code is completely correct!
   tooLongCode: The code is too long!
 
@@ -277,7 +267,7 @@ downloads:
   aliases: Aliases
   addonDownloadTitle: Download Link for the Latest <addon> Version
   arguments:
-    skript: sk(ript)?(\.?jar)?
+    skript: 'sk(ript)?(\.?jar)? '
     addons: (sk(ript)?)?add-?ons?
     aliases: (english)?(sk(ript)?)?alias(es)?(file)?
     spigot: spigot

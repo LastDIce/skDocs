@@ -221,25 +221,15 @@ parse:
   invalidFile: Bu paste/dosya geçersiz veya süresi dolmuş.
   unsupportedFileTypeTitle: Geçersiz File
   unsupportedFileType: 'Desteklenmeyen dosya türü: `<extension>`'
-  CODE: KOD
-  ERROR: HATA
-  WARNING: UYARI
   errors: ':x: Kodda <plural:<count> tane||bir> hata var!'
   warnings: ':warning: Kodda <plural:<count> tane||bir> uyarı var!'
   errorsAndWarnings: ':x: Kodda <error plural:<error count> tane||bir> hata ve <warning plural:<warning count> tane||bir> uyarı var! :warning:'
   parseTime: Ayrıştırılma Süresi
   line: Satır
+  error: Hata
   lines: Satırlar
   length: Uzunluk
-  skriptParserTitle: Skript Ayrıştırıcısı Sonuçları
-  sender: Gönderici
-  scriptLines: Script Satırları
-  scriptLength: Script Uzunluğu
-  errorsTitle: Hatalar
   warningsTitle: Uyarılar
-  ERRORS: HATALAR
-  WARNINGS: UYARILAR
-  CODE: KOD
   resultsLink: Sonuçları görüntülemek için [**buraya tıklayınız**](<url>) veya zaten açıksa sayfayı yenileyebilirsiniz.
   correctCode: Kod tamamen doğru!
   tooLongCode: Kod çok uzun!
@@ -273,7 +263,7 @@ downloads:
   aliases: Aliases
   addonDownloadTitle: Son Sürüm <addon> İçin İndirme Adresi
   arguments:
-    skript: sk(ript)?(\.?jar)?
+    skript: 'sk(ript)?(\.?jar)? '
     addons: (sk(ript)?)?add-?on(ları?)?
     aliases: (ingilizce)?(sk(ript)?)?alias(es)?(dosya(sı)?)?
     spigot: spigot
