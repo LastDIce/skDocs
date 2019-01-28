@@ -273,7 +273,7 @@ downloads:
 
 #Syntax Match Command
 syntaxMatch:
-  usage: `<Skript Syntax to Match>` - supports code block
+  usage: '`<Skript Syntax to Match>` - supports code blocks'
   tooLongSyntax: Too long syntax!
   title: Random Syntax Match
   error: Syntax Error
