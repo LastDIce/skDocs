@@ -3,6 +3,7 @@ translators:
 
 ms: ms
 invalidCodeBlock: Geçersiz kod bloğu!
+usageTitle: Komut Kullanımı
 
 #Guide Command
 guide:
@@ -155,13 +156,11 @@ docs:
 
   availableSections: '**Mevcut Bölümler:** `olaylar`/`koşullar`/`etkiler`/`ifadeler`/`fonksiyonlar`/`tipler` - ve bunların kısaltmaları.'
   availableAddons: Mevcut Addonlar
-  wrongUsageTitle: Yanlış Kullanım
-  wrongUsage: <mention>, lütfen yardım için **<prefix>yardım** yaz!
+  usage: <mention>, lütfen yardım için **<prefix>yardım** yaz!
 
 #Names Command
 names:
   commandUsage:
-    title: Komut Kullanımı
     commandsTitle: Komutlar
     argumentsTitle: Argümanlar
     sections: Bölümler
@@ -209,9 +208,8 @@ names:
 
 #Parse Command
 parse:
-  wrongUsage: Yanlış Kullanım
-  noArgument: |
-    ``<Ayrıştırılacak Skript Kodu>`` - kod blokları destekliyor
+  usage: |
+    `<Ayrıştırılacak Skript Kodu>` - kod bloğu destekliyor
     
     Kod için [Gist](https://gist.github.com), [GitHub](https://github.com) (Dosya), [hastebin](https://www.hastebin.com) veya [Pastebin](https://www.pastebin.com) bağlantısı kullanabilirsiniz.
   cooldown: <mention>, lütfen yavaşla!
@@ -230,7 +228,7 @@ parse:
   lines: Satırlar
   length: Uzunluk
   warningsTitle: Uyarılar
-  resultsLink: Sonuçları görüntülemek için [**buraya tıklayınız**](<url>) veya zaten açıksa sayfayı yenileyebilirsiniz.
+  resultsLink: Sonuçları görüntülemek için [**buraya tıkla**](<url>) veya zaten açıksa sayfayı yenileyebilirsin.
   correctCode: Kod tamamen doğru!
   tooLongCode: Kod çok uzun!
 
@@ -271,6 +269,7 @@ downloads:
  
 #Syntax Match Command
 syntaxMatch:
+  usage: `<Eşleştirilecek Kod Kalıbı>` - kod bloğu destekliyor
   tooLongSyntax: Çok uzun kod kalıbı!
   title: Rastgele Kod Kalıbı Eşleştirmesi
   error: Kod Kalıbı Hatası

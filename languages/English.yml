@@ -9,6 +9,7 @@
 
 ms: ms #Example: 100ms
 invalidCodeBlock: Invalid code block!
+usageTitle: Command Usage
 
 #Guide Command
 guide:
@@ -159,13 +160,11 @@ docs:
 
   availableSections: '**Available Sections:** `events`/`conditions`/`effects`/`expressions`/`functions`/`types` - and their abbreviations.'
   availableAddons: Available Addons
-  wrongUsageTitle: Wrong Usage
-  wrongUsage: <mention>, please type **<prefix>help** for help!
+  usage: <mention>, please type **<prefix>help** for help!
 
 #Names Command
 names:
   commandUsage:
-    title: Command Usage
     commandsTitle: Commands
     argumentsTitle: Arguments
     sections: Sections
@@ -213,9 +212,8 @@ names:
 
 #Parse Command
 parse:
-  wrongUsage: Wrong Usage
-  noArgument: |
-    ``<Skript Code to Parse>`` - supports code block
+  usage: |
+    `<Skript Code to Parse>` - supports code block
     
     You can use [Gist](https://gist.github.com), [GitHub](https://github.com) (File), [hastebin](https://www.hastebin.com) or [Pastebin](https://www.pastebin.com) link for the code.
   cooldown: <mention>, please slow down!
@@ -275,6 +273,7 @@ downloads:
 
 #Syntax Match Command
 syntaxMatch:
+  usage: `<Skript Syntax to Match>` - supports code block
   tooLongSyntax: Too long syntax!
   title: Random Syntax Match
   error: Syntax Error
