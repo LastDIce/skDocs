@@ -269,7 +269,7 @@ downloads:
  
 #Syntax Match Command
 syntaxMatch:
-  usage: `<Eşleştirilecek Kod Kalıbı>` - kod bloğu destekliyor
+  usage: '`<Eşleştirilecek Kod Kalıbı>` - kod bloğu destekliyor'
   tooLongSyntax: Çok uzun kod kalıbı!
   title: Rastgele Kod Kalıbı Eşleştirmesi
   error: Kod Kalıbı Hatası
