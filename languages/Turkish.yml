@@ -208,7 +208,7 @@ names:
   fireworkTypes:
     arguments: (havai ?)?fişek ?(tipi|tipleri|türü|türleri)?
     title: Skript İçin Kullanılabilir Havai Fişek türleri Listesi
-  resourcePackstates:
+  resourcePackStates:
     arguments: kaynak ?paketi? ?durum(u|ları)?
     title: Skript İçin Kullanılabilir Kaynak Paketi Durumları Listesi
   entityTypes:

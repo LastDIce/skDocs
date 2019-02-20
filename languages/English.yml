@@ -212,7 +212,7 @@ names:
   fireworkTypes:
     arguments: fireworks?( ?types?)?
     title: Usable Firework Types List for Skript
-  resourcePackstates:
+  resourcePackStates:
     arguments: r(es(ource))?? ?p(ack)? ?states?
     title: Usable Resource Pack States List for Skript
   entityTypes:
