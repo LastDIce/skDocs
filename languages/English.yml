@@ -189,7 +189,7 @@ names:
     arguments: chat ?styles?
     title: Usable Chat Styles List for Skript
   damageCauses:
-    arguments: (damage|dmg) ?(causes?|reasons?|types?)?|damages?
+    arguments: (damage|dmg)( ?(causes?|reasons?|types?))?|damages?
     title: Usable Damage Causes List for Skript
   teleportCauses:
     arguments: t(ele)?p(ort)? ?(causes?|reasons?|types?)?
@@ -216,7 +216,7 @@ names:
     arguments: r(es(ource))?? ?p(ack)? ?states?
     title: Usable Resource Pack States List for Skript
   entityTypes:
-    arguments: entit(ies|y) ?(types?)?
+    arguments: entit(ies|y)( ?(types?))?
     title: Usable Entity Types List for Skript
 
 #Parse Command
