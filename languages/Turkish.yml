@@ -185,7 +185,7 @@ names:
     arguments: sohbet ?stil(ler)?i
     title: Skript İçin Kullanılabilir Sohbet Stilleri Listesi
   damageCauses:
-    arguments: (hasar|hsr)( ?(sebe(pler|b)?i|tip(ler)?i)|hasar(lar))?
+    arguments: (hasar|hsr)( ?(sebe(pler|b)?i|tip(ler)?i))?|hasar(lar)?
     title: Skript İçin Kullanılabilir Hasar Sebepleri Listesi
   teleportCauses:
     arguments: ışınlanma ?(sebe(pler|b)?i|tip(ler)?i)
