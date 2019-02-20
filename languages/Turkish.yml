@@ -185,8 +185,11 @@ names:
     arguments: sohbet ?stil(ler)?i
     title: Skript İçin Kullanılabilir Sohbet Stilleri Listesi
   damageCauses:
-    arguments: h(asar)? ?sebe(pler|b)?i|hasar(lar)?
+    arguments: (hasar|hsr) ?(sebe(pler|b)?i|tip(ler)?i)|hasar(lar)?
     title: Skript İçin Kullanılabilir Hasar Sebepleri Listesi
+  teleportCauses:
+    arguments: ışınlanma ?(sebe(pler|b)?i|tip(ler)?i)
+    title: Skript İçin Kullanılabilir Işınlanma Sebepleri Listesi
   visualEffects: 
     arguments: sanal ?efekt(ler)?|parçacık(lar)?
     title: Skript İçin Kullanılabilir Sanal Efektler Listesi
@@ -202,6 +205,12 @@ names:
   spawnReasons:
     arguments: (oluşma|spa?wn) ?(sebepleri?|sebebi)
     title: Skript İçin Kullanılabilir Oluşma (Spawn) Sebepleri Listesi
+  fireworkTypes:
+    arguments: (havai ?)?fişek ?(tipi|tipleri|türü|türleri)?
+    title: Skript İçin Kullanılabilir Havai Fişek türleri Listesi
+  resourcePackstates:
+    arguments: kaynak ?paketi? ?durum(u|ları)?
+    title: Skript İçin Kullanılabilir Kaynak Paketi Durumları Listesi
   entityTypes:
     arguments: varlık(lar)?( ?tip(ler)?i)?
     title: Skript İçin Kullanılabilir Varlık Listesi

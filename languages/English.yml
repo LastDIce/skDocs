@@ -171,7 +171,7 @@ names:
     section: Section
     page: page
   enchantments:
-    arguments: ench(antment)?s?( ?types?)?
+    arguments: ench(ant(ment)?)?s?( ?types?)?
     title: Usable Enchantments List for Skript 
   potionEffects:
     arguments: pot(ion)?( ?eff(ect)?s?)?( ?types?)?|eff(ect)?s?|potions?
@@ -189,8 +189,11 @@ names:
     arguments: chat ?styles?
     title: Usable Chat Styles List for Skript
   damageCauses:
-    arguments: d(am((a)?ge)?)? ?c(auses?)?|damages?
+    arguments: (damage|dmg) ?(causes?|reasons?|types?)?|damages?
     title: Usable Damage Causes List for Skript
+  teleportCauses:
+    arguments: t(ele)?p(ort)? ?(causes?|reasons?|types?)?
+    title: Usable Teleport Causes List for Skript
   visualEffects: 
     arguments: v(isual)? ?e(ff(ect)?s)?|particles?
     title: Usable Visual Effects List for Skript
@@ -206,6 +209,12 @@ names:
   spawnReasons:
     arguments: spa?wn(ing)? ?reasons?
     title: Usable Spawn Reasons List for Skript
+  fireworkTypes:
+    arguments: fireworks?( ?types?)?
+    title: Usable Firework Types List for Skript
+  resourcePackstates:
+    arguments: r(es(ource))?? ?p(ack)? ?states?
+    title: Usable Resource Pack States List for Skript
   entityTypes:
     arguments: entit(ies|y) ?(types?)?
     title: Usable Entity Types List for Skript
