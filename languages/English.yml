@@ -1,20 +1,20 @@
-#Placeholders - works on only specified values.
-# <prefix> = The command prefix the user used
-# <mention> = Mention tag of the user
-# <nl> = New line
-# <plural:text> = Means the text will be shown only if the value is plural. Example: Apple<plural:s>
-# <...plural:text1||text2> = Means the text1 will be shown only if the value is plural. If not, text2 will be shown.
+# Placeholders - works in only specified values.
+#   <prefix> = The command prefix the user used
+#   <mention> = Mention tag of the user
+#   <nl> = New line
+#   <plural:text> = Means the text will be shown only if the value is plural. Example: Apple<plural:s>
+#   <...plural:text1||text2> = Means the text1 will be shown only if the value is plural. If not, text2 will be shown.
 
-#You can remove comment lines while translating if you want.
+# You can remove the comment lines while translating if you want (except in English.yml and command name comments).
 
-ms: ms #Example: 100ms
+ms: ms # for example, 100ms
 invalidCodeBlock: Invalid code block!
 usageTitle: Command Usage
 
-#Guide Command
+# Guide Command
 guide:
   guideSent: My guide has been directly messaged to you, <mention>!
-  #You can't create new embeds or fields etc. It won't affect.
+  # You can't create new embeds or fields etc. It won't affect.
   embeds:
     '1':
       title: Command Prefixes
@@ -63,7 +63,7 @@ guide:
       
         :low_brightness: **!sk invite** - **!sk link** - **!sk inviteLink** - **!sk join** *- Get an invite link to add the bot to your server.*
     
-#Documentation Command
+# Documentation Command
 docs:
   skriptDocumentationTitle: Skript Documentation
   skriptDocumentationSearchTitle: Skript Documentation Search
@@ -74,11 +74,11 @@ docs:
   expressions: Expressions
   functions: Functions
   types: Types
-  page: Page #like Page: 2
+  page: Page # for example, Page: 2
   codeID: Code ID
   search:
     found1Result: Found only 1 result, showing its info directly.
-    searchTook: Search took <time> #Search took 10ms
+    searchTook: Search took <time> # Search took 10ms
     nothingFound: Nothing related to this query and flags was found.
     query-everything:
     - '*'
@@ -91,16 +91,16 @@ docs:
     queryContains: Contains
     queryDoesNotContain: Doesn't Contain
     sources: Source<plural:s>
-    notSources: (Not) Source<plural:s> #like (Not) Source: Skript
+    notSources: (Not) Source<plural:s> # for example, (Not) Source: Skript
     sections: Section<plural:s>
-    notSections: (Not) Section<plural:s> #like (Not) Sections: Effects and Expressions
+    notSections: (Not) Section<plural:s> # for example, (Not) Sections: Effects and Expressions
     flags:
       addons:
-        pattern: a(?:d(?:d(?:(?:-)?ons?)?)?)?|sources?|from|of #There must be non-capturing groups (?:)! -- Don't use spaces
+        pattern: a(?:d(?:d(?:(?:-)?ons?)?)?)?|sources?|from|of # There must be non-capturing groups (?:)! -- Don't use spaces
       sections:
-        pattern: s(?:e(?:c(?:tion)?)?)?s?|types?|categor(?:y|ies) #There must be non-capturing groups (?:)! -- Don't use spaces
+        pattern: s(?:e(?:c(?:tion)?)?)?s?|types?|categor(?:y|ies) # There must be non-capturing groups (?:)! -- Don't use spaces
         values:
-          #Don't use spaces
+          # Don't use spaces
           events: ev(en)?(t)?s?
           conditions: co(n)?(d)?(it(io)?(n)?)?s?
           effects: eff?(ect?)?s?
@@ -108,9 +108,9 @@ docs:
           functions: fu(n)?(c)?(t(io(n)?)?)?s?
           types: ty(p)?(e)?s?|class?(es)?
       page:
-        pattern: p|pa?ge?s? #There must be non-capturing groups (?:)! -- Don't use spaces
+        pattern: p|pa?ge?s? # There must be non-capturing groups (?:)! -- Don't use spaces
       id:
-        pattern: 'c(?:ode?)?|(?:code?)?ID?s?|element?s?' #There must be non-capturing groups (?:)! -- Don't use spaces
+        pattern: 'c(?:ode?)?|(?:code?)?ID?s?|element?s?' # There must be non-capturing groups (?:)! -- Don't use spaces
       contains:
         pattern: (c(o(n(tain(s(text)?)?)?)?)?|include(s(text)?)?) 
   infoPage:
@@ -162,7 +162,7 @@ docs:
   availableAddons: Available Addons
   usage: <mention>, please type **<prefix>help** for help!
 
-#Names Command
+# Names Command
 names:
   commandUsage:
     commandsTitle: Commands
@@ -219,7 +219,7 @@ names:
     arguments: entit(ies|y)( ?(types?))?
     title: Usable Entity Types List for Skript
 
-#Parse Command
+# Parse Command
 parse:
   usage: |
     `<Skript Code to Parse>` - supports code block
@@ -245,7 +245,7 @@ parse:
   correctCode: The code is completely correct!
   tooLongCode: The code is too long!
 
-#Bot Info Command
+# Bot Info Command
 botInfo:
   title: Bot Info
   RAM: RAM
@@ -260,11 +260,11 @@ botInfo:
   created: '**Created:** by ``@Blueyescat#0733`` on August 3, 2017'
   GitHubTitle: Issue Tracker and Language Management
 
-#Invites Command
+# Invites Command
 invites:
   click: Click here to add me to your server!
 
-#Downloads Command
+# Downloads Command
 downloads:
   title: Downloads
   latest: Latest
@@ -272,6 +272,7 @@ downloads:
   skript: Skript
   addons: Addons
   aliases: Aliases
+  aliasesNote: In Skript 2.3+, the aliases files are in the JAR file of Skript. You shouldn't need to change them.
   addonDownloadTitle: Download Link for the Latest <addon> Version
   arguments:
     skript: 'sk(ript)?(\.?jar)? '
@@ -280,14 +281,14 @@ downloads:
     spigot: spigot
     paper: paper(mc|clip|spigot)?
 
-#Syntax Match Command
+# Syntax Match Command
 syntaxMatch:
   usage: '`<Skript Syntax to Match>` - supports code blocks'
   tooLongSyntax: Too long syntax!
   title: Random Syntax Match
   error: Syntax Error
 
-#Language Command
+# Language Command
 language:
   botLanguageTitle: Bot Language
   onlyAdmin: This command can only be used by members with the **Administrator** permission.
@@ -300,7 +301,7 @@ language:
   specialThanks: 'Thanks for translating skDocs into this language:'
 
 commands:
-  #Don't use spaces
+  # Don't use spaces
   guide: help|guide|co?m(man)?ds?(list)?
   skriptDocumentation: (sk(ript)?-?)?doc(ument(ation)?)?s?
   info: bot|(bot-?)?(info(rmation)?|stat(istic)?s)

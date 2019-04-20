@@ -5,7 +5,7 @@ ms: ms
 invalidCodeBlock: Geçersiz kod bloğu!
 usageTitle: Komut Kullanımı
 
-#Guide Command
+# Guide Command
 guide:
   guideSent: Kullanım kılavuzum sana direkt mesaj olarak gönderildi, <mention>!
   embeds:
@@ -56,7 +56,7 @@ guide:
         
         :low_brightness: **!sk davet** - **!sk adres** - **!sk davetAdresi** - **!sk katıl** *- Botu sunucuna eklemek için bir adres al.*
     
-#Documentation Command
+# Documentation Command
 docs:
   skriptDocumentationTitle: Skript Dokümantasyonu
   skriptDocumentationSearchTitle: Skript Dokümantasyonu Araması
@@ -158,7 +158,7 @@ docs:
   availableAddons: Mevcut Addonlar
   usage: <mention>, lütfen yardım için **<prefix>yardım** yaz!
 
-#Names Command
+# Names Command
 names:
   commandUsage:
     commandsTitle: Komutlar
@@ -215,7 +215,7 @@ names:
     arguments: varlık(lar)?( ?tip(ler)?i)?
     title: Skript İçin Kullanılabilir Varlık Listesi
 
-#Parse Command
+# Parse Command
 parse:
   usage: |
     `<Ayrıştırılacak Skript Kodu>` - kod bloğu destekliyor
@@ -241,7 +241,7 @@ parse:
   correctCode: Kod tamamen doğru!
   tooLongCode: Kod çok uzun!
 
-#Bot Info Command
+# Bot Info Command
 botInfo:
   title: Bot Bilgisi
   RAM: RAM
@@ -256,11 +256,11 @@ botInfo:
   created: '**Oluşturuldu:** ``@Blueyescat#0733`` tarafından 3 Ağustos 2017''de'
   GitHubTitle: Sorun İzleyicisi ve Dil Yönetimi
 
-#Invites Command
+# Invites Command
 invites:
   click: Beni sunucuna eklemek için buraya tıkla!
 
-#Downloads Command
+# Downloads Command
 downloads:
   title: İndirmeler
   latest: En Son
@@ -268,6 +268,7 @@ downloads:
   skript: Skript
   addons: Addonlar
   aliases: Aliases
+  aliasesNote: Skript 2.3+''da aliases dosyaları Skript'in JAR dosyasının içinde. Onları değiştirmen gerekmemeli. 
   addonDownloadTitle: Son Sürüm <addon> İçin İndirme Adresi
   arguments:
     skript: 'sk(ript)?(\.?jar)? '
@@ -276,14 +277,14 @@ downloads:
     spigot: spigot
     paper: paper(mc|clip|spigot)?
  
-#Syntax Match Command
+# Syntax Match Command
 syntaxMatch:
   usage: '`<Eşleştirilecek Kod Kalıbı>` - kod bloğu destekliyor'
   tooLongSyntax: Çok uzun kod kalıbı!
   title: Rastgele Kod Kalıbı Eşleştirmesi
   error: Kod Kalıbı Hatası
 
-#Language Command
+# Language Command
 language:
   botLanguageTitle: Bot Dili
   onlyAdmin: Bu komutu sadece **Yönetici** yetkisine sahip üyeler kullanabilir.
