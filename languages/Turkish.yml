@@ -267,8 +267,9 @@ downloads:
   latestBETA: Son BETA Sürümü
   skript: Skript
   addons: Addonlar
+  skQueryNote: Skript 2.2-dev37c ve aşağısı için (3.6.1)
   aliases: Aliases
-  aliasesNote: Skript 2.3+''da aliases dosyaları Skript'in JAR dosyasının içinde. Onları değiştirmen gerekmemeli. 
+  aliasesNote: Skript 2.3+''da aliases dosyaları Skript'in JAR dosyasının içinde. Onları değiştirmeniz gerekmemeli.
   addonDownloadTitle: Son Sürüm <addon> İçin İndirme Adresi
   arguments:
     skript: 'sk(ript)?(\.?jar)? '

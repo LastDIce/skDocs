@@ -271,6 +271,7 @@ downloads:
   latestBETA: Latest BETA Version
   skript: Skript
   addons: Addons
+  skQueryNote: For Skript 2.2-dev37c and below (3.6.1)
   aliases: Aliases
   aliasesNote: In Skript 2.3+, the aliases files are in the JAR file of Skript. You shouldn't need to change them.
   addonDownloadTitle: Download Link for the Latest <addon> Version
