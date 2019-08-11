@@ -250,8 +250,15 @@ botInfo:
   servers: Sunucular
   users: Kullanıcılar
   invite: Davet
-  installedAddons: Yüklü addonlar
-  documentCount: Toplam belge sayısı
+  docs:
+    title: Dokümantasyon
+    addons: Addonlar
+    addonsHover: üstünde tut
+    elements: Öğeler
+    descriptions: Açıklamalar
+    examples: Örnekler
+    examplesNote: + her öğe için rastgele oluşturulmuş örnekler 
+    patterns: Kalıplar
   joinServerDate: Bu sunucuya katılma zamanı
   created: '**Oluşturuldu:** ``@Blueyescat#0733`` tarafından 3 Ağustos 2017''de'
   GitHubTitle: Sorun izleyicisi ve dil yönetimi

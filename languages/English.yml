@@ -254,8 +254,15 @@ botInfo:
   servers: Servers
   users: Users
   invite: Invite
-  installedAddons: Installed addons
-  documentCount: Total number of documents
+  docs:
+    title: Documentation
+    addons: Addons
+    addonsHover: hover over
+    elements: Elements
+    descriptions: Descriptions
+    examples: Examples
+    examplesNote: + random generated examples for every element
+    patterns: Patterns
   joinServerDate: Date of joining this server 
   created: '**Created:** by ``@Blueyescat#0733`` on August 3, 2017'
   GitHubTitle: Issue tracker and language management
