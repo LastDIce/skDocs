@@ -254,11 +254,11 @@ botInfo:
   servers: Servers
   users: Users
   invite: Invite
-  installedAddons: Installed Addons
-  documentCount: Total Number of Documents
-  joinServerDate: Join Server Date
+  installedAddons: Installed addons
+  documentCount: Total number of documents
+  joinServerDate: Date of joining this server 
   created: '**Created:** by ``@Blueyescat#0733`` on August 3, 2017'
-  GitHubTitle: Issue Tracker and Language Management
+  GitHubTitle: Issue tracker and language management
 
 # Invites Command
 invites:

@@ -246,15 +246,15 @@ botInfo:
   title: Bot Bilgisi
   RAM: RAM
   megaByte: MB
-  runtime: Çalışma Zamanı
+  runtime: Çalışma zamanı
   servers: Sunucular
   users: Kullanıcılar
   invite: Davet
-  installedAddons: Yüklü Addonlar
-  documentCount: Toplam Belge Sayısı
-  joinServerDate: Sunucuya Katılma Zamanı
+  installedAddons: Yüklü addonlar
+  documentCount: Toplam belge sayısı
+  joinServerDate: Bu sunucuya katılma zamanı
   created: '**Oluşturuldu:** ``@Blueyescat#0733`` tarafından 3 Ağustos 2017''de'
-  GitHubTitle: Sorun İzleyicisi ve Dil Yönetimi
+  GitHubTitle: Sorun izleyicisi ve dil yönetimi
 
 # Invites Command
 invites:
