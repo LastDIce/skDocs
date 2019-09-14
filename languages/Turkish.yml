@@ -246,7 +246,10 @@ botInfo:
   title: Bot Bilgisi
   RAM: RAM
   megaByte: MB
-  runtime: Çalışma zamanı
+  uptime:
+    title: Günlük çalışma süresi
+    format: '%<percent>'
+    details: (genel çalışma süresi istatistikleri)
   servers: Sunucular
   users: Kullanıcılar
   invite: Davet

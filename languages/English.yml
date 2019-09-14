@@ -250,7 +250,10 @@ botInfo:
   title: Bot Info
   RAM: RAM
   megaByte: MB
-  runtime: Runtime
+  uptime:
+    title: Daily uptime
+    format: '<percent>%'
+    details: (general uptime stats)
   servers: Servers
   users: Users
   invite: Invite
