@@ -253,7 +253,7 @@ botInfo:
   uptime:
     title: Daily uptime
     format: '<percent>%'
-    details: (general uptime stats)
+    details: general uptime stats
   servers: Servers
   users: Users
   invite: Invite

@@ -249,7 +249,7 @@ botInfo:
   uptime:
     title: Günlük çalışma süresi
     format: '%<percent>'
-    details: (genel çalışma süresi istatistikleri)
+    details: genel çalışma süresi istatistikleri
   servers: Sunucular
   users: Kullanıcılar
   invite: Davet
