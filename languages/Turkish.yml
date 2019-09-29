@@ -267,6 +267,9 @@ info:
     examples: Örnekler
     examplesNote: + her öğe için rastgele oluşturulmuş örnekler 
     patterns: Kalıplar
+  commandStats:
+    title: Haftalık Komut İstatistikleri
+    total: Toplam
   joinServerDate: Bu sunucuya katılma zamanı
   created: '**Oluşturuldu:** ``@Blueyescat#0733`` tarafından 3 Ağustos 2017''de'
   GitHubTitle: Sorun izleyicisi ve dil yönetimi

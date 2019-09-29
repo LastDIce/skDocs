@@ -271,6 +271,9 @@ info:
     examples: Examples
     examplesNote: + random generated examples for every element
     patterns: Patterns
+  commandStats:
+    title: Weekly Command Statistics
+    total: Total
   joinServerDate: Date of joining this server 
   created: '**Created:** by ``@Blueyescat#0733`` on August 3, 2017'
   GitHubTitle: Issue tracker and language management
