@@ -7,6 +7,7 @@ usageTitle: Komut Kullanımı
 
 # Guide Command
 guide:
+  name: Rehber
   guideSent: Kullanım kılavuzum sana direkt mesaj olarak gönderildi, <mention>!
   embeds:
     '1':
@@ -57,7 +58,8 @@ guide:
         :low_brightness: **!sk davet** - **!sk adres** - **!sk davetAdresi** - **!sk katıl** *- Botu sunucuna eklemek için bir adres al.*
     
 # Documentation Command
-docs:
+documentation:
+  name: Dokümantasyon
   skriptDocumentationTitle: Skript Dokümantasyonu
   skriptDocumentationSearchTitle: Skript Dokümantasyonu Araması
   info: Bilgi
@@ -160,6 +162,7 @@ docs:
 
 # Names Command
 names:
+  name: İsimler
   commandUsage:
     commandsTitle: Komutlar
     argumentsTitle: Argümanlar
@@ -217,6 +220,7 @@ names:
 
 # Parse Command
 parse:
+  name: Kod Ayrıştırıcı
   usage: |
     `<Ayrıştırılacak Skript Kodu>` - kod bloğu destekliyor
     
@@ -242,7 +246,8 @@ parse:
   tooLongCode: Kod çok uzun!
 
 # Bot Info Command
-botInfo:
+info:
+  name: Bot Bilgisi
   title: Bot Bilgisi
   RAM: RAM
   megaByte: MB
@@ -268,10 +273,12 @@ botInfo:
 
 # Invites Command
 invites:
+  name: Davetler
   click: Beni sunucuna eklemek için buraya tıkla!
 
 # Downloads Command
 downloads:
+  name: İndirmeler
   title: İndirmeler
   latest: En Son
   latestBETA: Son BETA Sürümü
@@ -290,6 +297,7 @@ downloads:
  
 # Syntax Match Command
 syntaxMatch:
+  name: Kod Kalıbı Eşleştirmesi
   usage: '`<Eşleştirilecek Kod Kalıbı>` - kod bloğu destekliyor'
   tooLongSyntax: Çok uzun kod kalıbı!
   title: Rastgele Kod Kalıbı Eşleştirmesi
@@ -297,6 +305,7 @@ syntaxMatch:
 
 # Language Command
 language:
+  name: Dil
   botLanguageTitle: Bot Dili
   onlyAdmin: Bu komutu sadece **Yönetici** yetkisine sahip üyeler kullanabilir.
   noArgument: |

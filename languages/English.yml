@@ -13,6 +13,7 @@ usageTitle: Command Usage
 
 # Guide Command
 guide:
+  name: Guide
   guideSent: My guide has been directly messaged to you, <mention>!
   # You can't create new embeds or fields etc. It won't affect.
   embeds:
@@ -64,7 +65,8 @@ guide:
         :low_brightness: **!sk invite** - **!sk link** - **!sk inviteLink** - **!sk join** *- Get an invite link to add the bot to your server.*
     
 # Documentation Command
-docs:
+documentation:
+  name: Documentation
   skriptDocumentationTitle: Skript Documentation
   skriptDocumentationSearchTitle: Skript Documentation Search
   info: Info
@@ -164,6 +166,7 @@ docs:
 
 # Names Command
 names:
+  name: Names
   commandUsage:
     commandsTitle: Commands
     argumentsTitle: Arguments
@@ -221,6 +224,7 @@ names:
 
 # Parse Command
 parse:
+  name: Code Parser
   usage: |
     `<Skript Code to Parse>` - supports code block
     
@@ -246,7 +250,8 @@ parse:
   tooLongCode: The code is too long!
 
 # Bot Info Command
-botInfo:
+info:
+  name: Bot Info
   title: Bot Info
   RAM: RAM
   megaByte: MB
@@ -272,10 +277,12 @@ botInfo:
 
 # Invites Command
 invites:
+  name: Invites
   click: Click here to add me to your server!
 
 # Downloads Command
 downloads:
+  name: Downloads
   title: Downloads
   latest: Latest
   latestBETA: Latest BETA Version
@@ -294,6 +301,7 @@ downloads:
 
 # Syntax Match Command
 syntaxMatch:
+  name: Syntax Match
   usage: '`<Skript Syntax to Match>` - supports code blocks'
   tooLongSyntax: Too long syntax!
   title: Random Syntax Match
@@ -301,6 +309,7 @@ syntaxMatch:
 
 # Language Command
 language:
+  name: Language
   botLanguageTitle: Bot Language
   onlyAdmin: This command can only be used by members with the **Administrator** permission.
   noArgument: |
