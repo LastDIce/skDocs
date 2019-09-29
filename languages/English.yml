@@ -276,7 +276,7 @@ info:
     total: Total
   joinServerDate: Date of joining this server 
   created: '**Created:** by ``@Blueyescat#0733`` on August 3, 2017'
-  GitHubTitle: Issue tracker and language management
+  gitHubTitle: Language management and issue tracker
 
 # Invites Command
 invites:

@@ -272,7 +272,7 @@ info:
     total: Toplam
   joinServerDate: Bu sunucuya katılma zamanı
   created: '**Oluşturuldu:** ``@Blueyescat#0733`` tarafından 3 Ağustos 2017''de'
-  GitHubTitle: Sorun izleyicisi ve dil yönetimi
+  gitHubTitle: Dil yönetimi ve sorun izleyicisi
 
 # Invites Command
 invites:
