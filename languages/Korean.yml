@@ -1,0 +1,340 @@
+# Placeholders - works in only specified values.
+#   <prefix> = The command prefix the user used
+#   <mention> = Mention tag of the user
+#   <nl> = New line
+#   <plural:text> = Means the text will be shown only if the value is plural. Example: Apple<plural:s>
+#   <...plural:text1||text2> = Means the text1 will be shown only if the value is plural. If not, text2 will be shown.
+
+# You can remove the comment lines while translating if you want (except in English.yml and command name comments).
+
+ms: ms # for example, 100ms
+invalidCodeBlock: 코드 블럭이 잘못되었습니다!
+usageTitle: 명령어 사용방법
+
+# Guide Command
+guide:
+  name: Guide
+  guideSent: <mention>, 제 사용 설명서가 전송되었습니다!
+  # You can't create new embeds or fields etc. It won't affect.
+  embeds:
+    '1':
+      title: Command Prefixes
+    '2':
+      title: 문서 명령어들
+      fields:
+        '1':
+          title: Arguments
+          value: |
+            ```css
+            <Search Query> (!|-)contains:<Texts> (!|-)sources:<Addons/Skript> (!|-)sections:<Sections> page:<Number> id:<Number>```**-** Putting **!** or **-** before a flag makes the flag negative.
+            **-** All flags are optional and their order doesn't matter.
+            **-** There are many aliases for all flags. **Examples:** containsText, includesText, addons, from, types, categories, pages, codeID, element etc...
+        '2':
+          title: 예시
+          value: |
+            **!sk docs** file 
+             *`- "file"을 포함하는 모든걸 검색합니다.`*
+             
+            **!sk docs** bossbar **source:**skRayFall **section:**Effects,Expressions
+             *`- skRayFall에드온에서 "bossbar"을 포함하는 모든걸 검색합니다.`*
+             
+            **!sk docs** tree **contains:**type **sec:**types **from:**Skript
+             *`- "tree" 를 포함하는 "type"을 가져옵니다.`*
+            
+            **!sk docs** subtext **id:**1
+             *`- "subtext"가 포함된 ID 1의 정보`*
+            
+            **!sk docs** * **!contains:**message -- embed **of:**Vixio **category:**effs
+             *`- Vixio 에드온의 모든 effect 중에서 "message" 와 "embed"를 제외한 모든걸 검색합니다.`*
+            
+            **!sk docs** inventory **!cont:**open -- blank **addon:**skQuery,TuSKe
+             *`-  TuSKe 또는 skQuery 에드온에서 "inventory"를 포함한걸 검색합니다. 그중에서도, "open" 또는 "blank"를 포함하면 검색하지 않습니다.`*
+    '3':
+      title: 다른 명령어들
+      value: |
+        :low_brightness: **!sk info** - **!sk stats** *- 봇의 상태를 얻어옵니다.*
+        
+        :low_brightness: **!sk name** - **!sk nameList** - **!sk skriptNames** *- 사용 가능한 표현들을 얻어옵니다.*
+        
+        :low_brightness: **!sk downloads** - **!sk addons** - **!sk down** `[search query]` *- 스크립트, 에드온, 버킷 등의 다운로드 링크를 얻어옵니다.*
+         **검색 가능한것들:** skript, addons, aliases, spigot, paperspigot, paper etc.
+         **예시:** `!sk downloads` - `!sk down skript` - `!sk down skript and aliases` - `!sk down skript aliases paper`
+          
+        :low_brightness: **!sk syntax** - **!sk syntaxExamples** - **!sk randomSyntax** - **!sk match** - **!sk matchSyntax** *- 랜덤으로, 또는 표현 가능한 목록들을 불러옵니다.*
+      
+        :low_brightness: **!sk invite** - **!sk link** - **!sk inviteLink** - **!sk join** *- 봇의 초대링크를 받아옵니다.*
+    
+# Documentation Command
+documentation:
+  name: 문서
+  skriptDocumentationTitle: 스크립트 문서
+  skriptDocumentationSearchTitle: 스크립트 문서 검색기
+  info: Info
+  events: Events
+  conditions: Conditions
+  effects: Effects
+  expressions: Expressions
+  functions: Functions
+  types: Types
+  page: 페이지 # for example, Page: 2
+  codeID: Code ID
+  search:
+    found1Result: 1개의 검색결과가 있습니다. 설명을 표시합니다.
+    searchTook: 검색하는데 걸린 시간: <time> # Search took 10ms
+    nothingFound: 검색 결과를 찾을 수 없습니다.
+    query-everything:
+    - '*'
+    - '*모두*'
+    - '\\*전부*'
+    - '*싹다\\*'
+    - '\\*다\\*'
+    everythingTitle: '**\***모든것**\***'
+    query: 검색 결과
+    queryContains: 포함하는
+    queryDoesNotContain: 포함하지 않는
+    sources: 코드: <plural:s>
+    notSources: (Not) Source<plural:s> # for example, (Not) Source: Skript
+    sections: Section<plural:s>
+    notSections: (Not) Section<plural:s> # for example, (Not) Sections: Effects and Expressions
+    flags:
+      addons:
+        pattern: a(?:d(?:d(?:(?:-)?ons?)?)?)?|sources?|from|of # There must be non-capturing groups (?:)! -- Don't use spaces
+      sections:
+        pattern: s(?:e(?:c(?:tion)?)?)?s?|types?|categor(?:y|ies) # There must be non-capturing groups (?:)! -- Don't use spaces
+        values:
+          # Don't use spaces
+          events: ev(en)?(t)?s?
+          conditions: co(n)?(d)?(it(io)?(n)?)?s?
+          effects: eff?(ect?)?s?
+          expressions: ex(p)?(r)?(ess?io(n)?)?s?
+          functions: fu(n)?(c)?(t(io(n)?)?)?s?
+          types: ty(p)?(e)?s?|class?(es)?
+      page:
+        pattern: p|pa?ge?s? # There must be non-capturing groups (?:)! -- Don't use spaces
+      id:
+        pattern: 'c(?:ode?)?|(?:code?)?ID?s?|element?s?' # There must be non-capturing groups (?:)! -- Don't use spaces
+      contains:
+        pattern: (c(o(n(tain(s(text)?)?)?)?)?|include(s(text)?)?) 
+  infoPage:
+    description: 설명
+    patterns: 패턴
+    usage: 사용방법
+    examples: 예시
+    randomExampleCode: ' ^ 랜덤하게 생성된 코드입니다. (잘못된 부분이 많습니다!)'
+    eventValues: Event Values
+    cancellable: 취소 가능함
+    notCancellable: 취소 불가
+    changers: Changers
+    returnType: Return Type
+    since: 사용가능 버전
+    unknownSince: 알 수 없음.
+    requiredAddon: 스크립트 에드온이 필요합니다.
+    type:
+      title: Type
+      values:
+        event: Event
+        condition: Condition
+        effect: Effects
+        expression: Expression
+        function: Function
+        type: Type
+  errors:
+    invalidAddonNames-Title: 잘못된 에드온 이름: <plural:s>
+    invalidAddonName: 에드온의 이름이 잘못되었습니다.
+    invalidAddonNames: 에드온의 이름이 잘못되었습니다.
+    
+    invalidSectionNames-Title: 잘못된 섹션: <plural:s>
+    invalidSectionName: 섹션의 이름이 잘못되었습니다.
+    invalidSectionNames: 섹션의 이름이 잘못되었습니다.
+    
+    invalidPage: 잘못된 페이지
+    pageMustBeInteger: <mention>, 페이지 플레그는 Integer 형태여야만 합니다..
+    
+    incompatibleFlags: 호환되지 않는 플레그
+    pageWithoutSection: <mention>, 잘못된걸 선택했습니다. ``section:<Sections>`` flag.<nl><nl>**Sections:** ``events``/``conditions``/``effects``/``expressions``/``functions``/``types`` 중에서 선택하세요.
+    pageWithMultipleSections: <mention>, 여러개의 플레그를 사용할 때는 페이지를 사용할 수 없습니다.
+    
+    invalidCodeID: 잘못된 코드 ID
+    idMustBeInteger: <mention>, 코드 ID는 Integer 형태여야만 합니다..
+    
+    tooLongQuery: 너무 긴 쿼리!
+    queryLengthCantBeGreaterThan200: <mention>, 검색 결과가 200개를 넘어서는 안됩니다.
+
+  availableSections: '**Available Sections:** `events`/`conditions`/`effects`/`expressions`/`functions`/`types` - and their abbreviations.'
+  availableAddons: Available Addons
+  usage: <mention>, please type **<prefix>help** for help!
+
+# Names Command
+names:
+  name: Names
+  commandUsage:
+    commandsTitle: 명령어
+    argumentsTitle: Arguments
+    sections: 선택
+    section: 선택
+    page: 페이지
+  enchantments:
+    arguments: ench(ant(ment)?)?s?( ?types?)?
+    title: 사용 가능한 인첸트들
+  potionEffects:
+    arguments: pot(ion)?( ?eff(ect)?s?)?( ?types?)?|eff(ect)?s?|potions?
+    title: 사용 가능한 포션 효과들
+  biomes:
+    arguments: biomes?
+    title: 사용 가능한 바이옴 종류
+  treeTypes:
+    arguments: trees?( ?types?)?
+    title: 사용 가능한 나무 종류
+  colors:
+    arguments: colo(u)?rs?|dyes?
+    title: 사용 가능한 색상 종류
+  chatStyles:
+    arguments: chat ?styles?
+    title: 사용 가능한 채팅 스타일들
+  damageCauses:
+    arguments: (damage|dmg)( ?(causes?|reasons?|types?))?|damages?
+    title: 사용 가능한 데미지 이유들
+  teleportCauses:
+    arguments: t(ele)?p(ort)? ?(causes?|reasons?|types?)?
+    title: 사용 가능한 텔레포트 사유들
+  visualEffects: 
+    arguments: v(isual)? ?e(ff(ect)?s)?|particles?
+    title: 사용 가능한 파티클들
+  inventoryActions:
+    arguments: inv(entory)? ?act(ion)?s?
+    title: 사용 가능한 인벤토리의 액션들
+  clickTypes:
+    arguments: click ?types?
+    title: 사용 가능한 클릭 타입들
+  inventoryTypes:
+    arguments: inv(entor(y|ies))?( ?types?)?
+    title: 사용 가능한 인벤토리 타입들
+  spawnReasons:
+    arguments: spa?wn(ing)? ?reasons?
+    title: 사용 가능한 스폰 사유들
+  fireworkTypes:
+    arguments: fireworks?( ?types?)?
+    title: 사용 가능한 폭죽 타입들
+  resourcePackStates:
+    arguments: r(es(ource))?? ?p(ack)? ?states?
+    title: 사용 가능한 리소스팩 상태 목록
+  entityTypes:
+    arguments: entit(ies|y)( ?(types?))?
+    title: 사용 가능한 엔티티 목록
+
+# Parse Command
+parse:
+  name: 코드분석기
+  usage: |
+    `<Skript Code to Parse>` - supports code block
+    
+    [Gist](https://gist.github.com), [GitHub](https://github.com) (File), [hastebin](https://www.hastebin.com) 또는 [Pastebin](https://www.pastebin.com) 의 링크를 올려서, 코드를 검사받을 수 있습니다.
+  cooldown: <mention>, 천천히 해보자! 
+  invalidLinkTitle: 잘못된 링크
+  invalidLink: [Gist](https://gist.github.com), [GitHub](https://github.com) (File), [hastebin](https://www.hastebin.com) 와 [Pastebin](https://www.pastebin.com) 만 지원합니다.
+  invalidFileTitle: 잘못된 파일
+  invalidFile: 이 파일은 만료되었거나 잘못된 파일입니다.
+  unsupportedFileTypeTitle: 파일 오류!
+  unsupportedFileType: '지원하지 않는 파일: `<extension>`'
+  errors: ':x: <count>개의 에러가 코드에서 발견되었습니다!'
+  warnings: ':warning: <count>개의 경고가 코드에서 발견되었습니다!'
+  errorsAndWarnings: ':x: <error count>개의 에러와 <warning count>개의 경고가 코드에서 발견되었습니다! :warning:'
+  parseTime: 분석 시간
+  line: 라인
+  error: 에러
+  lines: 라인
+  length: 길이
+  warningsTitle: 경고
+  resultsLink: '[**Click here**](<url>)를 눌러서 결과를 보거나, 페이지를 새로고침 할 수 있습니다.'
+  correctCode: 이 코드는 정상적으로 작동하는 코드입니다!
+  tooLongCode: 코드가 너무 깁니다!
+
+# Bot Info Command
+info:
+  name: 봇 정보
+  title: 봇 정보
+  RAM: RAM
+  megaByte: MB
+  uptime:
+    title: 업타임
+    format: '<percent>%'
+    details: 업타임 통계
+  servers: 서버들
+  users: 유저들
+  invite: 초대
+  docs:
+    title: 문서
+    addons: 에드온
+    addonsHover: hover over
+    elements: Elements
+    descriptions: 설명
+    examples: 예제
+    examplesNote: + 랜덤으로 제작된 예제입니다.
+    patterns: 패턴
+  commandStats:
+    title: 주간 통계
+    total: 총합
+  joinServerDate: 서버에 처음 들어온날: 
+  created: '**Created:** by ``@Blueyescat#0733`` on August 3, 2017'
+  gitHubTitle: Language management and issue tracker
+
+# Invites Command
+invites:
+  name: 초대
+  click: 클릭해서 저를 서버에 초대해보세요!
+
+# Downloads Command
+downloads:
+  name: 다운로드
+  title: 다운로드
+  latest: 최신버전
+  latestBETA: 최신 배타버전
+  skript: 스크립트
+  addons: 에드온
+  skQueryNote: Skript 2.2-dev37c이나, 이보다 낮은 버전은 아래에 있습니다. (3.6.1)
+  aliases: Aliases
+  aliasesNote: 스크립트 2.3 버전 이상에서는 aliases 파일이 스크립트 내부에 있으므로, 수정할 필요가 없습니다.
+  addonDownloadTitle: 최신버전의 <addon> 다운로드 받기
+  arguments:
+    skript: 'sk(ript)?(\.?jar)? '
+    addons: (sk(ript)?)?add-?ons?
+    aliases: (english)?(sk(ript)?)?alias(es)?(file)?
+    spigot: spigot
+    paper: paper(mc|clip|spigot)?
+
+# Syntax Match Command
+syntaxMatch:
+  name: Syntax Match
+  usage: '`<Skript Syntax to Match>` - supports code blocks'
+  tooLongSyntax: Too long syntax!
+  title: Random Syntax Match
+  error: Syntax Error
+
+# Language Command
+language:
+  name: 언어
+  botLanguageTitle: 봇 언어
+  onlyAdmin: 이 명령어는 **관리자** 권한을 가지고있는 유저만 사용할 수 있습니다.
+  noArgument: |
+    **<prefix> 언어 <Language>** 라고 입력하여, 언어를 변경하세요.
+    
+    **사용 가능한 언어들:**
+    <languages>
+  languageChanged: '언어가 **English** 로 변경되었습니다.'
+  specialThanks: 'skDocs봇의 번역에 도움을 주신분들:'
+
+commands:
+  # Don't use spaces
+  guide: help|guide|co?m(man)?ds?(list)?
+  skriptDocumentation: (sk(ript)?-?)?doc(ument(ation)?)?s?
+  info: bot|(bot-?)?(info(rmation)?|stat(istic)?s)
+  names: (sk(ript)?-?)?names?(-?list)?
+  parse: (sk(ript)?-?)?parser?|parse-?sk(ript)?
+  invites: (inv(ite)?-?|join-?)?(link|URL)?s?
+  downloads:
+    all: down?(load)?s?|skript|aliases|add-?ons?-?(list)?|(list-?)?add-?ons?
+    skript: skript(\.?jar)?
+    aliases: aliases
+    addons: add-?ons?-?(list)?|(list-?)?add-?ons?
+  syntaxMatch: (random-?)?syn(tax)?-?(match|examples?)?|match(-?syn(tax)?)?
+  language: (change-?)?lang(uage)?s?
